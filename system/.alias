@@ -1,4 +1,0 @@
-# List in long format, include dotfiles
-alias l="ls -la"
-
-alias pc="uname"

@@ -14,6 +14,12 @@
 function print {
 	echo  "\033[1;32m=> $1\033[0m";
 }
+function msg {
+	echo  "\033[0;32m $1 \033[0m";
+}
+function msg_alert {
+	echo "\033[1;31m✖ $1 ✖\033[0m";
+}
 function msg_checking {
 	echo  "\033[1;32m=> $1 ✔\033[0m";
 }
@@ -25,10 +31,4 @@ function msg_install {
 }
 function msg_ok {
 	echo  "\033[1;32m==> $1 installed ✔\033[0m";
-}
-function msg {
-	echo  "\033[0;32m $1 \033[0m";
-}
-function msg_alert {
-	echo "\033[1;31m✖ $1 ✖\033[0m";
 }

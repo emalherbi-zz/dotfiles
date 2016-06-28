@@ -1,0 +1,3 @@
+# Show/hide desktop icons
+# alias desktopshow="defaults write com.apple.finder CreateDesktop -bool true  && killfinder"
+# alias desktophide="defaults write com.apple.finder CreateDesktop -bool false && killfinder"

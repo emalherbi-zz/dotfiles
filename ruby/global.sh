@@ -1,9 +1,9 @@
 source common/functions.sh
 
 # update gems
-gem update --system 
+sudo gem update --system
 print_checking "gem"
 
 # jekyll
-gem install jekyll 
+sudo gem install jekyll
 print_checking "jekyll"

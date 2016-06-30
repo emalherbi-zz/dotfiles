@@ -1,14 +1,14 @@
 source common/functions.sh
 
 function installnode() {
-    npm install -g ${@} 
+    sudo npm install -g ${@} 
 }
 
 # nodejs
 if which node &> /dev/null; then
     print_checking "node"
 else
-    brew install node 
+    brew install node
     print_checking "node"
 fi
 

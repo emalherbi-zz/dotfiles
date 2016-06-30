@@ -11,7 +11,7 @@ else
     if [ "$OS" = "OSX" ]; then
         ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     else
-        supo apt install linuxbrew-wrapper
+        sudo apt install linuxbrew-wrapper
     fi
     print_checking "brew"
 fi

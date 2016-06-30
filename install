@@ -28,20 +28,20 @@ else
     bash linux/global.sh
 fi
 
-# print_ln 'Install brew packages'
-# bash brew/global.sh
-#
-# print_ln 'Install cask packages'
-# bash cask/global.sh
-#
-# print_ln 'Install node packages'
-# bash node/global.sh
-#
-# print_ln 'Install ruby packages'
-# bash ruby/global.sh
-#
-# print_ln 'Configure dotfiles'
-# bash common/dotfiles.sh
+print_ln 'Install brew packages'
+bash brew/global.sh
+
+print_ln 'Install cask packages' 
+bash cask/global.sh
+
+print_ln 'Install node packages'
+bash node/global.sh
+
+print_ln 'Install ruby packages'
+bash ruby/global.sh
+
+print_ln 'Configure dotfiles'
+bash common/dotfiles.sh
 
 # TODO:
 # installar sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

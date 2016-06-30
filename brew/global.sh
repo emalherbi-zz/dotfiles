@@ -1,4 +1,4 @@
-#source common/functions.sh
+source common/functions.sh
 
 function installbrew() {
     brew install "${@}" 1>/dev/null 2>&1

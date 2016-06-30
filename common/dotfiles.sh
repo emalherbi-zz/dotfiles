@@ -1,4 +1,4 @@
-#source common/functions.sh
+source common/functions.sh
 
 if [ "$OS" = "OSX" ]; then
     # .osx

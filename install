@@ -31,7 +31,7 @@ fi
 print_ln 'Install brew packages'
 bash brew/global.sh
 
-print_ln 'Install cask packages' 
+print_ln 'Install cask packages'
 bash cask/global.sh
 
 print_ln 'Install node packages'

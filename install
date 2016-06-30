@@ -3,37 +3,48 @@
 source common/functions.sh
 
 # Create your here: http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
-msg '  _______    ______   ________  ________  ______  __        ________   ______   '
-msg ' /       \  /      \ /        |/        |/      |/  |      /        | /      \  '
-msg ' $$$$$$$  |/$$$$$$  |$$$$$$$$/ $$$$$$$$/ $$$$$$/ $$ |      $$$$$$$$/ /$$$$$$  | '
-msg ' $$ |  $$ |$$ |  $$ |   $$ |   $$ |__      $$ |  $$ |      $$ |__    $$ \__$$/  '
-msg ' $$ |  $$ |$$ |  $$ |   $$ |   $$    |     $$ |  $$ |      $$    |   $$      \  '
-msg ' $$ |  $$ |$$ |  $$ |   $$ |   $$$$$/      $$ |  $$ |      $$$$$/     $$$$$$  | '
-msg ' $$ |__$$ |$$ \__$$ |   $$ |   $$ |       _$$ |_ $$ |_____ $$ |_____ /  \__$$ | '
-msg ' $$    $$/ $$    $$/    $$ |   $$ |      / $$   |$$       |$$       |$$    $$/  '
-msg ' $$$$$$$/   $$$$$$/     $$/    $$/       $$$$$$/ $$$$$$$$/ $$$$$$$$/  $$$$$$/   '
+msg ' _______    ______   ________  ________  ______  __        ________   ______  '
+msg '/       \  /      \ /        |/        |/      |/  |      /        | /      \ '
+msg '$$$$$$$  |/$$$$$$  |$$$$$$$$/ $$$$$$$$/ $$$$$$/ $$ |      $$$$$$$$/ /$$$$$$  |'
+msg '$$ |  $$ |$$ |  $$ |   $$ |   $$ |__      $$ |  $$ |      $$ |__    $$ \__$$/ '
+msg '$$ |  $$ |$$ |  $$ |   $$ |   $$    |     $$ |  $$ |      $$    |   $$      \ '
+msg '$$ |  $$ |$$ |  $$ |   $$ |   $$$$$/      $$ |  $$ |      $$$$$/     $$$$$$  |'
+msg '$$ |__$$ |$$ \__$$ |   $$ |   $$ |       _$$ |_ $$ |_____ $$ |_____ /  \__$$ |'
+msg '$$    $$/ $$    $$/    $$ |   $$ |      / $$   |$$       |$$       |$$    $$/ '
+msg '$$$$$$$/   $$$$$$/     $$/    $$/       $$$$$$/ $$$$$$$$/ $$$$$$$$/  $$$$$$/  '
 
 OSX=$(test "`uname`" == "Darwin" && echo "x")
 
 if [[ -d "$HOME/Sites/dotfiles" ]]; then
-    msg_checking "Checking dotfiles directory"
+    msg_checking "checking dotfiles directory"
 else
-    msg_install "Cloning" "git@github.com:emalherbi/dotfiles.git"
+    msg_checking "cloning dotfiles directory from github"
     git clone git@github.com:emalherbi/dotfiles.git $HOME/Sites/dotfiles
-    msg_ok "OK"
 fi
+
+print 'OS X Software Updates'
+
+sh osx/global.sh
+
+print 'Install brew packages'
 
 sh brew/global.sh
 
+print 'Install cask packages'
+
+sh cask/global.sh
+
+print 'Install node packages'
+
 sh node/global.sh
+
+print 'Install ruby packages'
 
 sh ruby/global.sh
 
-# sh sublime/global.sh
+print 'Configure dotfiles'
 
 sh common/dotfiles.sh
-#
-# sh vim/global.sh
 
 # TODO:
 # installar sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

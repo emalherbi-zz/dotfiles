@@ -3,47 +3,44 @@
 source common/functions.sh
 
 # Create your here: http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
-msg ' _______    ______   ________  ________  ______  __        ________   ______  '
-msg '/       \  /      \ /        |/        |/      |/  |      /        | /      \ '
-msg '$$$$$$$  |/$$$$$$  |$$$$$$$$/ $$$$$$$$/ $$$$$$/ $$ |      $$$$$$$$/ /$$$$$$  |'
-msg '$$ |  $$ |$$ |  $$ |   $$ |   $$ |__      $$ |  $$ |      $$ |__    $$ \__$$/ '
-msg '$$ |  $$ |$$ |  $$ |   $$ |   $$    |     $$ |  $$ |      $$    |   $$      \ '
-msg '$$ |  $$ |$$ |  $$ |   $$ |   $$$$$/      $$ |  $$ |      $$$$$/     $$$$$$  |'
-msg '$$ |__$$ |$$ \__$$ |   $$ |   $$ |       _$$ |_ $$ |_____ $$ |_____ /  \__$$ |'
-msg '$$    $$/ $$    $$/    $$ |   $$ |      / $$   |$$       |$$       |$$    $$/ '
-msg '$$$$$$$/   $$$$$$/     $$/    $$/       $$$$$$/ $$$$$$$$/ $$$$$$$$/  $$$$$$/  '
-
-OSX=$(test "`uname`" == "Darwin" && echo "x")
+print ' _______    ______   ________  ________  ______  __        ________   ______  '
+print '/       \  /      \ /        |/        |/      |/  |      /        | /      \ '
+print '$$$$$$$  |/$$$$$$  |$$$$$$$$/ $$$$$$$$/ $$$$$$/ $$ |      $$$$$$$$/ /$$$$$$  |'
+print '$$ |  $$ |$$ |  $$ |   $$ |   $$ |__      $$ |  $$ |      $$ |__    $$ \__$$/ '
+print '$$ |  $$ |$$ |  $$ |   $$ |   $$    |     $$ |  $$ |      $$    |   $$      \ '
+print '$$ |  $$ |$$ |  $$ |   $$ |   $$$$$/      $$ |  $$ |      $$$$$/     $$$$$$  |'
+print '$$ |__$$ |$$ \__$$ |   $$ |   $$ |       _$$ |_ $$ |_____ $$ |_____ /  \__$$ |'
+print '$$    $$/ $$    $$/    $$ |   $$ |      / $$   |$$       |$$       |$$    $$/ '
+print '$$$$$$$/   $$$$$$/     $$/    $$/       $$$$$$/ $$$$$$$$/ $$$$$$$$/  $$$$$$/  '
 
 if [[ -d "$HOME/Sites/dotfiles" ]]; then
-    msg_checking "checking dotfiles directory"
+    print_checking "checking dotfiles directory"
 else
-    msg_checking "cloning dotfiles directory from github"
+    print_checking "cloning dotfiles directory from github"
     git clone git@github.com:emalherbi/dotfiles.git $HOME/Sites/dotfiles
 fi
 
-print 'OS X Software Updates'
+if [ "$OS" = "OSX" ]; then
+    print_ln 'OS X Software Updates'
+    sh osx/global.sh
+else
+    print_ln 'Linux Software Updates'
+    sh linux/global.sh
+fi
 
-sh osx/global.sh
-
-print 'Install brew packages'
-
+print_ln 'Install brew packages'
 sh brew/global.sh
 
-print 'Install cask packages'
-
+print_ln 'Install cask packages'
 sh cask/global.sh
 
-print 'Install node packages'
-
+print_ln 'Install node packages'
 sh node/global.sh
 
-print 'Install ruby packages'
-
+print_ln 'Install ruby packages'
 sh ruby/global.sh
 
-print 'Configure dotfiles'
-
+print_ln 'Configure dotfiles'
 sh common/dotfiles.sh
 
 # TODO:

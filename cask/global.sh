@@ -1,47 +1,47 @@
 source common/functions.sh
 
-function install() {
-	brew cask install "${@}" 1>/dev/null 2>&1
+function installcask() {
+		brew cask install "${@}" 1>/dev/null 2>&1
 }
 
-install google-chrome
-msg_checking "google-chrome"
+installcask google-chrome
+print_checking "google-chrome"
 
-install google-chrome-canary
-msg_checking "google-chrome-canary"
+installcask google-chrome-canary
+print_checking "google-chrome-canary"
 
-install imagealpha
-msg_checking "imagealpha"
+installcask imagealpha
+print_checking "imagealpha"
 
-install imageoptim
-msg_checking "imageoptim"
+installcask imageoptim
+print_checking "imageoptim"
 
-install iterm2
-msg_checking "iterm2"
+installcask iterm2
+print_checking "iterm2"
 
-install macvim
-msg_checking "macvim"
+installcask macvim
+print_checking "macvim"
 
-install miro-video-converter
-msg_checking "miro-video-converter"
+installcask miro-video-converter
+print_checking "miro-video-converter"
 
-install atom
-msg_checking "atom"
+installcask atom
+print_checking "atom"
 
-install the-unarchiver
-msg_checking "the-unarchiver"
+installcask the-unarchiver
+print_checking "the-unarchiver"
 
-install tor-browser
-msg_checking "tor-browser"
+installcask tor-browser
+print_checking "tor-browser"
 
-install transmission
-msg_checking "transmission"
+installcask transmission
+print_checking "transmission"
 
-install ukelele
-msg_checking "ukelele"
+installcask ukelele
+print_checking "ukelele"
 
-install virtualbox
-msg_checking "virtualbox"
+installcask virtualbox
+print_checking "virtualbox"
 
-install vlc
-msg_checking "vlc"
+installcask vlc
+print_checking "vlc"

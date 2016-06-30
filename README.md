@@ -1,7 +1,5 @@
 # My dotfiles
 
-![Screen](http://f.cl.ly/items/3O0i2I1f080A2v1k330t/Screen%20Shot%202013-10-07%20at%201.41.00%20AM.png)
-
 ## How to run
 
 ```bash
@@ -11,9 +9,9 @@ $ sh install
 ## Instalation
 
 ```bash
-$ curl -L https://raw.github.com/davidsonfellipe/dotfiles/master/install | sh
+$ curl -L https://raw.github.com/emalherbi/dotfiles/master/install | sh
 # or
-$ git clone https://github.com/davidsonfellipe/dotfiles.git && cd dotfiles && sh install.sh
+$ git clone https://github.com/emalherbi/dotfiles.git && cd dotfiles && sh install.sh
 ```
 
 ## Git Aliases

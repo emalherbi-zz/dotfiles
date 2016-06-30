@@ -12,25 +12,22 @@
 #  37  # White   #
 ##################
 function print {
+	echo  "\033[0;32m $1 \033[0m";
+}
+function print_ln {
 	echo  "\033[1;37m \033[0m";
 	echo  "\033[1;37m=> $1\033[0m";
 	echo  "\033[1;37m \033[0m";
 }
-function msg {
-	echo  "\033[0;32m $1 \033[0m";
-}
-function msg_alert {
+function print_alert {
 	echo "\033[1;31m✖ $1 ✖\033[0m";
 }
-function msg_checking {
+function print_checking {
 	echo  "\033[1;32m=> $1 ✔\033[0m";
 }
-function msg_installing {
-	echo  "\033[1;33m==> $1 [updating] ✔\033[0m";
-}
-function msg_install {
-	echo  "\033[1;33m==> $1 [installing]: $ $2\033[0m";
-}
-function msg_ok {
-	echo  "\033[1;32m==> $1 installed ✔\033[0m";
-}
+
+if [ "$(uname -s)" = "Darwin" ]; then
+    OS="OSX"
+else
+    OS=$(uname -s)
+fi

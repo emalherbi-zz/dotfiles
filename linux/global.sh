@@ -1,4 +1,4 @@
-source common/functions.sh
+#source common/functions.sh
 
 sudo apt update 1>/dev/null 2>&1
 print_checking "linux update"

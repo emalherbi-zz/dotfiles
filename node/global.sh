@@ -1,4 +1,4 @@
-source common/functions.sh
+#source common/functions.sh
 
 function installnode() {
     npm install -g ${@} 1>/dev/null 2>&1

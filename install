@@ -43,7 +43,9 @@ bash ruby/global.sh
 print_ln 'Configure dotfiles'
 bash common/dotfiles.sh
 
-# TODO:
+# TODO
+# 1>/dev/null 2>&1
+#
 # installar sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # sudo vim ~/.zshrc
 # plugins=(git npm bower brew osx extract z history-substring-search)

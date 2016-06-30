@@ -1,7 +1,7 @@
 source common/functions.sh
 
 function installcask() {
-		brew cask install "${@}" 1>/dev/null 2>&1
+		brew cask install "${@}" 
 }
 
 installcask google-chrome

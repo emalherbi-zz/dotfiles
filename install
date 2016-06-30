@@ -22,26 +22,26 @@ fi
 
 if [ "$OS" = "OSX" ]; then
     print_ln 'OS X Software Updates'
-    sh osx/global.sh
+    bash osx/global.sh
 else
     print_ln 'Linux Software Updates'
-    sh linux/global.sh
+    bash linux/global.sh
 fi
 
-print_ln 'Install brew packages'
-sh brew/global.sh
-
-print_ln 'Install cask packages'
-sh cask/global.sh
-
-print_ln 'Install node packages'
-sh node/global.sh
-
-print_ln 'Install ruby packages'
-sh ruby/global.sh
-
-print_ln 'Configure dotfiles'
-sh common/dotfiles.sh
+# print_ln 'Install brew packages'
+# bash brew/global.sh
+#
+# print_ln 'Install cask packages'
+# bash cask/global.sh
+#
+# print_ln 'Install node packages'
+# bash node/global.sh
+#
+# print_ln 'Install ruby packages'
+# bash ruby/global.sh
+#
+# print_ln 'Configure dotfiles'
+# bash common/dotfiles.sh
 
 # TODO:
 # installar sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

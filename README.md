@@ -1,4 +1,4 @@
-# My dotfiles
+# My dotfiles for Mac/Ubuntu
 
 ## Instalation
 
@@ -14,7 +14,7 @@ $ git clone https://github.com/emalherbi/dotfiles.git && cd dotfiles
 $ sh install
 ```
 
-#### Linux (Ubuntu)
+#### Linux
 
 ```bash
 $ bash install
@@ -23,33 +23,48 @@ $ bash install
 ## Git Aliases
 
 ```bash
-$ git st ~ status -sb
-$ git ci ~ commit -m
-$ git br ~ branch
-$ git df ~ diff
-$ git lg ~ git log -pgit ps
-$ git co ~ git checkout
-$ git tree ~ git log --graph --pretty=oneline --decorate
-$ git pom ~ git push origin master
-$ git ps ~ git push
-$ git pl ~ git pull
-$ git pp ~ git !"echo 'Pull'; git pull; echo 'Push'; git push"
-$ git amend ~ git commit --amend -C HEAD
-$ git ll ~ git log --pretty=oneline --decorate --abbrev-commit --max-count=15
-$ git lll ~ git git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
-$ git rn ~ git log -M
-$ git short ~ git shortlog -s -n
+$ git ada ~ add *
+$ git adf ~ add * --force
+$ git act ~ shortlog --numbered --summary --email --no-merges --since="6 months"
+$ git bra ~ branch
+$ git brd ~ branch -d
+$ git cln ~ clone
+$ git chk ~ checkout
+$ git cob ~ checkout -b
+$ git cim ~ commit -m
+$ git dff ~ diff
+$ git meg ~ merge
+$ git pus ~ push
+$ git sta ~ status -sb
+$ git tag ~ tag
+```
+
+## Linux Aliases
+
+```bash
+$ c       ~ clear
+$ l       ~ ls -l
+$ la      ~ ls -la
+$ home    ~ cd ~
+$ ..      ~ cd ..
+$ sites   ~ cd $HOME/Sites/
+$ wheater ~ curl "http://wttr.in/Pato_Branco"
 ```
 
 ## Utils
 
 ```bash
+.osx ✔
 .bash_profile ✔
+.bash_aliases ✔
+.inputrc ✔
 .gitconfig ✔
-.gitignore_global ✔
+.gitignore ✔
+.git-completion ✔
+.editorconfig ✔
 ```
 
-## Gems e etc...
+## Gems e etc
 
 ```
 => homebrew ✔
@@ -60,7 +75,7 @@ $ git short ~ git shortlog -s -n
 |  => ant ✔
 |  => fish ✔
 |  => android-platform-tools ✔
-=> cask ✔
+=> cask ✔ (only mac)
 |  => google-chrome ✔
 |  => google-chrome-canary ✔
 |  => torbrowser ✔

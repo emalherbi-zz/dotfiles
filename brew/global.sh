@@ -7,8 +7,8 @@ function installbrew() {
 if [ "$OS" = "OSX" ]; then
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
-    sudo apt-get install linuxbrew-wrapper
-    sudo apt-get install build-essential
+    sudo apt-get install -y build-essential curl git python-setuptools ruby
+    sudo apt-get install -y linuxbrew-wrapper
 fi
 print_checking "brew"
 
@@ -20,22 +20,25 @@ fi
 if [ "$OS" = "OSX" ]; then
     brew install node
 else
-    sudo apt install nodejs-legacy
-    sudo apt install npm
+    sudo apt install -y nodejs
 fi
 print_checking "node"
 
 installbrew wifi-password
 print_checking "wifi-password"
 
-installbrew subversion
-print_checking "svn"
+if [ "$OS" = "OSX" ]; then
+    installbrew subversion
+    print_checking "svn"
+fi
 
 installbrew ant
 print_checking "ant"
 
 installbrew fish
-chsh -s /usr/local/bin/fish # fish default shell
+if [ "$OS" = "OSX" ]; then
+  chsh -s /usr/local/bin/fish # fish default shell
+fi
 print_checking "fish"
 
 installbrew android-platform-tools

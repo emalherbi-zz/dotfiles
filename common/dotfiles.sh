@@ -7,14 +7,21 @@ if [ "$OS" = "OSX" ]; then
         killall Finder
         print_checking "~/.osx"
     fi
-fi
 
-# .bash_profile
-if [ -f "system/.bash_profile" ]; then
-    sudo ln -sf $pwd/system/.bash_profile ~/.bash_profile
-    source ~/.bash_profile
-    print_checking "~/.bash_profile"
-    print_alert "For use on this session, type: source ~/.bash_profile"
+    # .bash_profile
+    if [ -f "system/.bash_profile" ]; then
+        sudo ln -sf $pwd/system/.bash_profile ~/.bash_profile
+        source ~/.bash_profile
+        print_checking "~/.bash_profile"
+        print_alert "For use on this session, type: source ~/.bash_profile"
+    fi
+else
+    # .bash_aliases
+    if [ -f "system/.bash_aliases" ]; then
+        sudo ln -sf $pwd/system/.bash_aliases ~/.bash_aliases
+        source ~/.bash_aliases
+        print_checking "~/.bash_aliases"
+    fi
 fi
 
 # .inputrc

@@ -1,17 +1,23 @@
 # My dotfiles
 
-## How to run
-
-```bash
-$ sh install
-```
-
 ## Instalation
 
 ```bash
-$ curl -L https://raw.github.com/emalherbi/dotfiles/master/install | sh
-# or
-$ git clone https://github.com/emalherbi/dotfiles.git && cd dotfiles && sh install.sh
+$ git clone https://github.com/emalherbi/dotfiles.git && cd dotfiles
+```
+
+## How to run
+
+#### Mac
+
+```bash
+$ sudo sh install
+```
+
+#### Linux
+
+```bash
+$ sudo bash install
 ```
 
 ## Git Aliases
@@ -47,16 +53,41 @@ $ git short ~ git shortlog -s -n
 
 ```
 => homebrew ✔
+|  => cask ✔
+|  => node ✔
+|  => wifi-password ✔
+|  => svn ✔
+|  => ant ✔
+|  => fish ✔
+|  => android-platform-tools ✔
+=> cask ✔
+|  => google-chrome ✔
+|  => google-chrome-canary ✔
+|  => torbrowser ✔
+|  => imagealpha ✔
+|  => imageoptim ✔
+|  => vlc ✔
+|  => miro-video-converter ✔
+|  => the-unarchiver ✔
+|  => transmission ✔
+|  => ukelele ✔
+|  => virtualbox ✔
+|  => iterm2 ✔
+|  => macvim ✔
+|  => atom ✔
 => node ✔
-=> npm ✔
-=> jshint ✔
-=> csslint ✔
-=> phantomjs ✔
-=> gem ✔
-=> capistrano ✔
-=> compass ✔
-=> jekyll ✔
-=> mongodb ✔
+|  => grunt ✔
+|  => grunt-init ✔
+|  => bower ✔
+|  => yeoman ✔
+|  => jshint ✔
+|  => csslint ✔
+|  => vtop ✔
+|  => nativefier ✔
+|  => tmi ✔
+=> ruby ✔
+|  => gem ✔
+|  => jekyll ✔
 ```
 
 ## License

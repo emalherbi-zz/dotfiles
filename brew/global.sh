@@ -4,39 +4,40 @@ function installbrew() {
     brew install "${@}"
 }
 
-# homebrew
-if which brew &> /dev/null; then
-    print_checking "brew"
+if [ "$OS" = "OSX" ]; then
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 else
-    if [ "$OS" = "OSX" ]; then
-        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    else
-        sudo apt install linuxbrew-wrapper
-    fi
-    print_checking "brew"
+    sudo apt-get install linuxbrew-wrapper
+    sudo apt-get install build-essential
+fi
+print_checking "brew"
+
+if [ "$OS" = "OSX" ]; then
+    brew tap caskroom/cask
+    print_checking "caskroom/cask"
 fi
 
-# caskroom/cask
-brew tap caskroom/cask
-print_checking "caskroom/cask"
+if [ "$OS" = "OSX" ]; then
+    brew install node
+else
+    sudo apt install nodejs-legacy
+    sudo apt install npm
+fi
+print_checking "node"
 
-# wifi-password
 installbrew wifi-password
 print_checking "wifi-password"
 
-# subversion
 installbrew subversion
 print_checking "svn"
 
-# ant
 installbrew ant
 print_checking "ant"
 
-# fish
 installbrew fish
+chsh -s /usr/local/bin/fish # fish default shell
 print_checking "fish"
 
-# android-platform-tools
 installbrew android-platform-tools
 print_checking "android-platform-tools"
 
@@ -45,7 +46,7 @@ brew update
 print_checking "brew update"
 
 # Upgrade any already-installed formulae.
-brew upgrade --all
+brew upgrade
 print_checking "brew update all packages"
 
 # Remove outdated versions from the cellar.

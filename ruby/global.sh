@@ -1,9 +1,11 @@
 source common/functions.sh
 
-# update gems
-sudo gem update --system
+if [ "$OS" = "OSX" ]; then
+  sudo gem update --system
+else
+  sudo apt-get install ruby ruby-dev make gcc
+fi
 print_checking "gem"
 
-# jekyll
-sudo gem install jekyll
+sudo gem install jekyll bundler
 print_checking "jekyll"

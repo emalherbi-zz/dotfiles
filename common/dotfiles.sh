@@ -3,7 +3,7 @@ source common/functions.sh
 if [ "$OS" = "OSX" ]; then
     # .osx
     if [ -f "osx/.osx" ]; then
-        sudo ln -sf $HOME/Sites/dotfiles/osx/.osx ~/.osx
+        sudo ln -sf ./osx/.osx ~/.osx
         killall Finder
         print_checking "~/.osx"
     fi
@@ -11,7 +11,7 @@ fi
 
 # .bash_profile
 if [ -f "system/.bash_profile" ]; then
-    sudo ln -sf $HOME/Sites/dotfiles/system/.bash_profile ~/.bash_profile
+    sudo ln -sf ./system/.bash_profile ~/.bash_profile
     source ~/.bash_profile
     print_checking "~/.bash_profile"
     print_alert "For use on this session, type: source ~/.bash_profile"
@@ -19,19 +19,19 @@ fi
 
 # .inputrc
 if [ -f "system/.inputrc" ]; then
-    sudo ln -sf $HOME/Sites/dotfiles/system/.inputrc ~/.inputrc
+    sudo ln -sf ./system/.inputrc ~/.inputrc
     print_checking "~/.inputrc"
 fi
 
 # .gitconfig
 if [ -f "git/.gitconfig" ]; then
-    sudo ln -sf $HOME/Sites/dotfiles/git/.gitconfig ~/.gitconfig
+    sudo ln -sf ./git/.gitconfig ~/.gitconfig
     print_checking "~/.gitconfig"
 fi
 
 # .gitignore
 if [ -f "git/.gitignore" ]; then
-    sudo ln -sf $HOME/Sites/dotfiles/git/.gitignore ~/.gitignore
+    sudo ln -sf ./git/.gitignore ~/.gitignore
     git config --global core.excludesfile ~/.gitignore
     print_checking "~/.gitignore"
 fi
@@ -44,7 +44,7 @@ fi
 
 # .editorconfig
 if [ -f "atom/.editorconfig" ]; then
-    sudo ln -sf $HOME/Sites/dotfiles/atom/.editorconfig ~/.editorconfig
+    sudo ln -sf ./atom/.editorconfig ~/.editorconfig
     print_checking "~/.editorconfig"
 fi
 

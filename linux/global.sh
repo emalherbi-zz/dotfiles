@@ -1,7 +1,7 @@
 source common/functions.sh
 
-sudo apt update 
+sudo apt update
 print_checking "linux update"
 
-sudo apt install ruby 
+sudo apt install ruby
 print_checking "ruby"

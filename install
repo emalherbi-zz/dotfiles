@@ -13,35 +13,30 @@ print '$$ |__$$ |$$ \__$$ |   $$ |   $$ |       _$$ |_ $$ |_____ $$ |_____ /  \_
 print '$$    $$/ $$    $$/    $$ |   $$ |      / $$   |$$       |$$       |$$    $$/ '
 print '$$$$$$$/   $$$$$$/     $$/    $$/       $$$$$$/ $$$$$$$$/ $$$$$$$$/  $$$$$$/  '
 
-if [[ -d "$HOME/Sites/dotfiles" ]]; then
-    print_checking "checking dotfiles directory"
-else
-    print_checking "cloning dotfiles directory from github"
-    git clone git@github.com:emalherbi/dotfiles.git $HOME/Sites/dotfiles
-fi
-
 if [ "$OS" = "OSX" ]; then
     print_ln 'OS X Software Updates'
     bash osx/global.sh
 else
     print_ln 'Linux Software Updates'
-    bash linux/global.sh
+    # bash linux/global.sh
 fi
 
 print_ln 'Install brew packages'
-bash brew/global.sh
+# bash brew/global.sh
 
-print_ln 'Install cask packages'
-bash cask/global.sh
+if [ "$OS" = "OSX" ]; then
+    print_ln 'Install cask packages'
+    bash cask/global.sh
+fi
 
 print_ln 'Install node packages'
-bash node/global.sh
+# bash node/global.sh
 
 print_ln 'Install ruby packages'
 bash ruby/global.sh
 
 print_ln 'Configure dotfiles'
-bash common/dotfiles.sh
+# bash common/dotfiles.sh
 
 # TODO
 # 1>/dev/null 2>&1

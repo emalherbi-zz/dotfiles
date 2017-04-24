@@ -21,6 +21,7 @@ else
         sudo ln -sf $pwd/system/.bash_aliases ~/.bash_aliases
         source ~/.bash_aliases
         print_checking "~/.bash_aliases"
+        print_alert "For use on this session, type: source ~/.bash_aliases"
     fi
 fi
 

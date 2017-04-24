@@ -11,13 +11,13 @@ $ git clone https://github.com/emalherbi/dotfiles.git && cd dotfiles
 #### Mac
 
 ```bash
-$ sudo sh install
+$ sh install
 ```
 
-#### Linux
+#### Linux (Ubuntu)
 
 ```bash
-$ sudo bash install
+$ bash install
 ```
 
 ## Git Aliases
@@ -80,11 +80,10 @@ $ git short ~ git shortlog -s -n
 |  => grunt-init ✔
 |  => bower ✔
 |  => yeoman ✔
-|  => jshint ✔
-|  => csslint ✔
 |  => vtop ✔
 |  => nativefier ✔
-|  => tmi ✔
+|  => generator-play-ideia ✔
+|  => generator-locawebstyle ✔
 => ruby ✔
 |  => gem ✔
 |  => jekyll ✔

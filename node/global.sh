@@ -16,20 +16,11 @@ print_checking "bower"
 installnode yo
 print_checking "yeoman"
 
-installnode jshint
-print_checking "jshint"
-
-installnode csslint
-print_checking "csslint"
-
 installnode vtop
 print_checking "vtop"
 
 installnode nativefier
 print_checking "nativefier"
-
-installnode tmi
-print_checking "tmi"
 
 installnode generator-play-ideia
 print_checking "generator-play-ideia"

@@ -15,9 +15,9 @@ function print() {
 	echo -e "\033[0;32m $1 \033[0m";
 }
 function print_ln() {
-	echo -e "\033[1;37m \033[0m";
+	# echo -e "\033[1;37m \033[0m";
 	echo -e "\033[1;37m=> $1\033[0m";
-	echo -e "\033[1;37m \033[0m";
+	# echo -e "\033[1;37m \033[0m";
 }
 function print_alert() {
 	echo -e "\033[1;31m✖ $1 ✖\033[0m";
@@ -31,3 +31,5 @@ if [ "$(uname -s)" = "Darwin" ]; then
 else
     OS=$(uname -s)
 fi
+
+pwd=$(pwd)

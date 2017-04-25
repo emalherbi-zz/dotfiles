@@ -23,20 +23,20 @@ $ bash install
 ## Git Aliases
 
 ```bash
-$ git ada ~ add *
-$ git adf ~ add * --force
 $ git act ~ shortlog --numbered --summary --email --no-merges --since="6 months"
-$ git bra ~ branch
+$ git ad  ~ add *
+$ git adf ~ add * --force
+$ git br  ~ branch
 $ git brd ~ branch -d
-$ git cln ~ clone
-$ git chk ~ checkout
-$ git cob ~ checkout -b
-$ git cim ~ commit -m
-$ git dff ~ diff
-$ git meg ~ merge
-$ git pus ~ push
-$ git sta ~ status -sb
-$ git tag ~ tag
+$ git ch  ~ checkout
+$ git chb ~ checkout -b
+$ git cl  ~ clone
+$ git co  ~ commit -m
+$ git df  ~ diff
+$ git me  ~ merge
+$ git pl  ~ pull
+$ git ps  ~ push
+$ git st  ~ status -sb
 ```
 
 ## Linux Aliases

@@ -2,21 +2,21 @@
     name = Eduardo Malherbi
     email = emalherbi@gmail.com
 [alias]
-    ada = add *
+    ad = add *
     adf = add * --force
     # Displays active users in the repository in the past 6 months
     act = shortlog --numbered --summary --email --no-merges --since="6 months"
-    bra = branch
+    br = branch
     brd = branch -d
-    cln = clone
-    chk = checkout
-    cob = checkout -b
-    cim = commit -m
-    dff = diff
-    meg = merge
-    pus = push
-    sta = status -sb
-    tag = tag
+    cl = clone
+    ch = checkout
+    chb = checkout -b
+    co = commit -m
+    df = diff
+    me = merge
+    ps = push
+    pl = pull
+    st = status -sb
 [color]
     diff = auto
     grep = auto
@@ -38,7 +38,7 @@
     changed = green
     untracked = cyan
 [core]
-	  excludesfile = /Users/emalherbi/.gitignore
+	  excludesfile = ~/.gitignore
 [push]
     default = simple
 [filter "media"]

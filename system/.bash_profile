@@ -15,9 +15,6 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 alias netlisteners='lsof -i -P | grep LISTEN'
 
-# sofwares
-alias textedit='/Applications/TextEdit.app/Contents/MacOS/TextEdit'
-
 # projects
 alias sites='cd $HOME/Sites/'
 
@@ -25,15 +22,15 @@ alias sites='cd $HOME/Sites/'
 alias tm='top -o vsize' # memory
 alias tu='top -o cpu' # cpu
 
-# mysql
-alias mysqlstart='/usr/local/mysql/support-files/mysql.server start'
-alias mysqlstop='/usr/local/mysql/support-files/mysql.server stop'
-alias mysqlreload='mysqlstart && mysqlstop;'
-
-# counter-line-code
-alias linecodehtml='find . -name *.html | xargs wc -l'
-alias linecodejs='find . -name *.js | xargs wc -l'
-alias linecodecss='find . -name *.css | xargs wc -l'
-
 # wheater
 alias weatherpb='curl "http://wttr.in/Pato_Branco"'
+
+# docker
+alias dcimg='sudo docker images'
+alias dcps='sudo docker ps'
+alias dcpsaq='sudo docker ps -a -q'
+alias dcstop='sudo docker stop'
+alias dcrm='sudo docker rm'
+alias dcrmi='sudo docker rmi'
+alias dcup='sudo docker-compose up'
+alias dcupd='sudo docker-compose up -d'

@@ -39,6 +39,34 @@ $ git ps  ~ push
 $ git st  ~ status -sb
 ```
 
+## Mac Aliases
+
+```bash
+$ c            ~ clear
+$ l            ~ ls -l
+$ la           ~ ls -la
+$ home         ~ cd ~
+$ trash        ~ rm -fr ~/.Trash
+$ ..           ~ cd ..
+$ showfiles    ~ defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder
+$ hidefiles    ~ defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder
+$ cleanup      ~ find . -type f -name '*.DS_Store' -ls -delete
+$ ips          ~ ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'
+$ netlisteners ~ lsof -i -P | grep LISTEN
+$ sites        ~ cd $HOME/Sites/
+$ tm           ~ top -o vsize
+$ tu           ~ top -o cpu
+$ wheater      ~ curl "http://wttr.in/Pato_Branco"
+$ dcimg        ~ docker images
+$ dcps         ~ docker ps
+$ dcpsaq       ~ docker ps -a -q
+$ dcstop       ~ docker stop
+$ dcrm         ~ docker rm
+$ dcrmi        ~ docker rmi
+$ dcup         ~ docker-compose up
+$ dcupd        ~ docker-compose up -d
+```
+
 ## Linux Aliases
 
 ```bash
@@ -46,9 +74,18 @@ $ c       ~ clear
 $ l       ~ ls -l
 $ la      ~ ls -la
 $ home    ~ cd ~
+$ trash   ~ rm -rf ~/.local/share/Trash/*
 $ ..      ~ cd ..
 $ sites   ~ cd $HOME/Sites/
 $ wheater ~ curl "http://wttr.in/Pato_Branco"
+$ dcimg   ~ docker images
+$ dcps    ~ docker ps
+$ dcpsaq  ~ docker ps -a -q
+$ dcstop  ~ docker stop
+$ dcrm    ~ docker rm
+$ dcrmi   ~ docker rmi
+$ dcup    ~ docker-compose up
+$ dcupd   ~ docker-compose up -d
 ```
 
 ## Utils

@@ -5,6 +5,7 @@ alias la='ls -la'
 alias home='cd ~'
 alias trash='rm -rf ~/.local/share/Trash/*'
 alias ..='cd ..'
+alias open='nautilus'
 
 # finder
 

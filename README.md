@@ -1,4 +1,4 @@
-# My dotfiles for Mac/Ubuntu
+# My dotfiles for Mac/Linux (Ubuntu)
 
 ## Instalation
 
@@ -8,13 +8,7 @@ $ git clone https://github.com/emalherbi/dotfiles.git && cd dotfiles
 
 ## How to run
 
-#### Mac
-
-```bash
-$ sh install
-```
-
-#### Linux
+#### Mac/Linux
 
 ```bash
 $ bash install
@@ -76,6 +70,7 @@ $ la      ~ ls -la
 $ home    ~ cd ~
 $ trash   ~ rm -rf ~/.local/share/Trash/*
 $ ..      ~ cd ..
+$ open    ~ nautilus
 $ sites   ~ cd $HOME/Sites/
 $ wheater ~ curl "http://wttr.in/Pato_Branco"
 $ dcimg   ~ docker images

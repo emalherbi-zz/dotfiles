@@ -13,6 +13,9 @@ alias open='nautilus'
 
 # projects
 alias sites='cd $HOME/Sites/'
+alias sitesphp7='cd $HOME/Sites/apache-php/www/html'
+alias sitesphp5='cd $HOME/Sites/apache-php-mysql-phpmyadmin/www/html'
+alias sitesphp5mssql='cd $HOME/Sites/apache-php-mysql-mssql-phpmyadmin/www/html'
 
 # processes
 

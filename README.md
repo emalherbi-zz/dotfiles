@@ -33,6 +33,37 @@ $ git ps  ~ push
 $ git st  ~ status -sb
 ```
 
+## Docker Aliases
+
+```bash
+$ dcimg   ~ docker images
+$ dcps    ~ docker ps
+$ dcpsaq  ~ docker ps -a -q
+$ dcstop  ~ docker stop
+$ dcstart ~ docker start
+$ dcrm    ~ docker rm
+$ dcrmi   ~ docker rmi
+$ dcup    ~ docker-compose up
+$ dcupd   ~ docker-compose up -d
+```
+
+## SVN Aliases
+
+```bash
+$ svnup ~ svn update .
+$ svnad ~ svn add * --force
+$ svnco ~ svn commit -m
+```
+
+## Projects Aliases
+
+```bash
+$ sites          ~ cd $HOME/Sites/
+$ sitesphp7      ~ cd $HOME/Sites/apache-php/www/html
+$ sitesphp5      ~ cd $HOME/Sites/apache-php-mysql-phpmyadmin/www/html
+$ sitesphp5mssql ~ cd $HOME/Sites/apache-php-mysql-mssql-phpmyadmin/www/html
+```
+
 ## Mac Aliases
 
 ```bash
@@ -47,18 +78,10 @@ $ hidefiles    ~ defaults write com.apple.finder AppleShowAllFiles -bool false &
 $ cleanup      ~ find . -type f -name '*.DS_Store' -ls -delete
 $ ips          ~ ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'
 $ netlisteners ~ lsof -i -P | grep LISTEN
-$ sites        ~ cd $HOME/Sites/
 $ tm           ~ top -o vsize
 $ tu           ~ top -o cpu
 $ wheater      ~ curl "http://wttr.in/Pato_Branco"
-$ dcimg        ~ docker images
-$ dcps         ~ docker ps
-$ dcpsaq       ~ docker ps -a -q
-$ dcstop       ~ docker stop
-$ dcrm         ~ docker rm
-$ dcrmi        ~ docker rmi
-$ dcup         ~ docker-compose up
-$ dcupd        ~ docker-compose up -d
+$ chr          ~ chmod -R 777
 ```
 
 ## Linux Aliases
@@ -71,16 +94,8 @@ $ home    ~ cd ~
 $ trash   ~ rm -rf ~/.local/share/Trash/*
 $ ..      ~ cd ..
 $ open    ~ nautilus
-$ sites   ~ cd $HOME/Sites/
 $ wheater ~ curl "http://wttr.in/Pato_Branco"
-$ dcimg   ~ docker images
-$ dcps    ~ docker ps
-$ dcpsaq  ~ docker ps -a -q
-$ dcstop  ~ docker stop
-$ dcrm    ~ docker rm
-$ dcrmi   ~ docker rmi
-$ dcup    ~ docker-compose up
-$ dcupd   ~ docker-compose up -d
+$ chr     ~ chmod -R 777
 ```
 
 ## Utils

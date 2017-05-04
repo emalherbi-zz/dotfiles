@@ -1,29 +1,35 @@
 # general
+alias ..='cd ..'
 alias c='clear'
+alias chr='sudo chmod -R 777'
+alias gg='sensible-browser "http://www.google.com"'
+alias home='cd ~'
 alias l='ls -l'
 alias la='ls -la'
-alias home='cd ~'
-alias trash='rm -rf ~/.local/share/Trash/*'
-alias ..='cd ..'
 alias open='nautilus'
+alias trash='rm -rf ~/.local/share/Trash/*'
 
 # finder
+# showfiles only mac
+# hidefiles only mac
+# cleanup only mac
 
 # net
+# ips only mac
+# netlisteners only mac
+
+# processes
+# tm only mac
+# tu only mac
+
+# wheater
+alias wheater='curl "http://wttr.in/Pato_Branco"'
 
 # projects
 alias sites='cd $HOME/Sites/'
 alias sitesphp7='cd $HOME/Sites/apache-php/www/html'
 alias sitesphp5='cd $HOME/Sites/apache-php-mysql-phpmyadmin/www/html'
 alias sitesphp5mssql='cd $HOME/Sites/apache-php-mysql-mssql-phpmyadmin/www/html'
-
-# processes
-
-# wheater
-alias wheater='curl "http://wttr.in/Pato_Branco"'
-
-# utils
-alias chr='sudo chmod -R 777'
 
 # docker
 alias dcimg='sudo docker images'

@@ -67,12 +67,14 @@ $ sitesphp5mssql ~ cd $HOME/Sites/apache-php-mysql-mssql-phpmyadmin/www/html
 ## Mac Aliases
 
 ```bash
+$ ..           ~ cd ..
 $ c            ~ clear
+$ chr          ~ chmod -R 777
+$ gg           ~ open "http://www.google.com"
+$ home         ~ cd ~
 $ l            ~ ls -l
 $ la           ~ ls -la
-$ home         ~ cd ~
 $ trash        ~ rm -fr ~/.Trash
-$ ..           ~ cd ..
 $ showfiles    ~ defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder
 $ hidefiles    ~ defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder
 $ cleanup      ~ find . -type f -name '*.DS_Store' -ls -delete
@@ -81,21 +83,21 @@ $ netlisteners ~ lsof -i -P | grep LISTEN
 $ tm           ~ top -o vsize
 $ tu           ~ top -o cpu
 $ wheater      ~ curl "http://wttr.in/Pato_Branco"
-$ chr          ~ chmod -R 777
 ```
 
 ## Linux Aliases
 
 ```bash
+$ ..      ~ cd ..
 $ c       ~ clear
+$ chr     ~ chmod -R 777
+$ gg      ~ sensible-browser "http://www.google.com"
+$ home    ~ cd ~
 $ l       ~ ls -l
 $ la      ~ ls -la
-$ home    ~ cd ~
-$ trash   ~ rm -rf ~/.local/share/Trash/*
-$ ..      ~ cd ..
 $ open    ~ nautilus
+$ trash   ~ rm -rf ~/.local/share/Trash/*
 $ wheater ~ curl "http://wttr.in/Pato_Branco"
-$ chr     ~ chmod -R 777
 ```
 
 ## Utils

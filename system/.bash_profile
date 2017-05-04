@@ -1,10 +1,13 @@
 # general
+alias ..='cd ..'
 alias c='clear'
+alias chr='sudo chmod -R 777'
+alias gg='open "http://www.google.com"'
+alias home='cd ~'
 alias l='ls -l'
 alias la='ls -la'
-alias home='cd ~'
+# open only linux
 alias trash='rm -fr ~/.Trash'
-alias ..='cd ..'
 
 # finder
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'
@@ -15,12 +18,6 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 alias netlisteners='lsof -i -P | grep LISTEN'
 
-# projects
-alias sites='cd $HOME/Sites/'
-alias sitesphp7='cd $HOME/Sites/apache-php/www/html'
-alias sitesphp5='cd $HOME/Sites/apache-php-mysql-phpmyadmin/www/html'
-alias sitesphp5mssql='cd $HOME/Sites/apache-php-mysql-mssql-phpmyadmin/www/html'
-
 # processes
 alias tm='top -o vsize' # memory
 alias tu='top -o cpu' # cpu
@@ -28,8 +25,11 @@ alias tu='top -o cpu' # cpu
 # wheater
 alias weatherpb='curl "http://wttr.in/Pato_Branco"'
 
-# utils
-alias chr='sudo chmod -R 777'
+# projects
+alias sites='cd $HOME/Sites/'
+alias sitesphp7='cd $HOME/Sites/apache-php/www/html'
+alias sitesphp5='cd $HOME/Sites/apache-php-mysql-phpmyadmin/www/html'
+alias sitesphp5mssql='cd $HOME/Sites/apache-php-mysql-mssql-phpmyadmin/www/html'
 
 # docker
 alias dcimg='sudo docker images'

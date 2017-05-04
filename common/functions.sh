@@ -25,6 +25,22 @@ function print_alert() {
 function print_checking() {
 	echo -e "\033[1;32m=> $1 ✔\033[0m";
 }
+function print_install() {
+  while true; do
+      read -p "Do you wish to install $1 packages? [Y/n] " yn
+      case $yn in
+          [Yy]* )
+            print_ln "Install $1 packages"
+            $2
+						print_checking "$1"
+            break;;
+          [Nn]* )
+            print_alert "Not install $1 packages"
+            break;;
+          * ) echo "Please answer Yes or No.";;
+      esac
+  done
+}
 
 if [ "$(uname -s)" = "Darwin" ]; then
     OS="OSX"

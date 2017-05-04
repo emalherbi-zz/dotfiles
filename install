@@ -21,77 +21,15 @@ else
     bash linux/global.sh
 fi
 
-while true; do
-    read -p "Do you wish to install brew packages? [Y/n] " yn
-    case $yn in
-        [Yy]* )
-          print_ln 'Install brew packages'
-          bash brew/global.sh
-          break;;
-        [Nn]* )
-          print_alert 'Brew not install by user'
-          break;;
-        * ) echo "Please answer Yes or No.";;
-    esac
-done
+print_install "brew" "bash brew/global.sh"
 
-if [ "$OS" = "OSX" ]; then
-  while true; do
-      read -p "Do you wish to install cask packages? [Y/n] " yn
-      case $yn in
-          [Yy]* )
-            print_ln 'Install cask packages'
-            bash cask/global.sh
-            break;;
-          [Nn]* )
-            print_alert 'Cask not install by user'
-            break;;
-          * ) echo "Please answer Yes or No.";;
-      esac
-  done
-fi
+print_install "cask" "bash cask/global.sh"
 
-while true; do
-    read -p "Do you wish to install node packages? [Y/n] " yn
-    case $yn in
-        [Yy]* )
-          print_ln 'Install node packages'
-          bash node/global.sh
-          break;;
-        [Nn]* )
-          print_alert 'Node not install by user'
-          break;;
-        * ) echo "Please answer Yes or No.";;
-    esac
-done
+print_install "node" "bash node/global.sh"
 
-while true; do
-    read -p "Do you wish to install ruby packages? [Y/n] " yn
-    case $yn in
-        [Yy]* )
-          print_ln 'Install ruby packages'
-          bash ruby/global.sh
-          break;;
-        [Nn]* )
-          print_alert 'Ruby not install by user'
-          break;;
-        * ) echo "Please answer Yes or No.";;
-    esac
-done
+print_install "ruby" "bash ruby/global.sh"
 
-while true; do
-    read -p "Do you wish to configure dotfiles? [Y/n] " yn
-    case $yn in
-        [Yy]* )
-          print_ln 'Configure dotfiles'
-          bash common/dotfiles.sh
-          break;;
-        [Nn]* )
-          print_alert 'Dotfiles configurations not install by user'
-          break;;
-        * ) echo "Please answer Yes or No.";;
-    esac
-done
+print_install "dotfiles" "bash common/dotfiles.sh"
 
 # TODO
 # 1>/dev/null 2>&1

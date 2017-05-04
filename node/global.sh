@@ -1,29 +1,17 @@
 source common/functions.sh
 
-function installnode() {
-    sudo npm install -g ${@}
-}
+print_install  "grunt-cli" "sudo npm install -g grunt-cli"
 
-installnode grunt-cli
-print_checking "grunt"
+print_install  "grunt-init" "sudo npm install -g grunt-init"
 
-installnode grunt-init
-print_checking "grunt-init"
+print_install  "bower" "sudo npm install -g bower"
 
-installnode bower
-print_checking "bower"
+print_install  "yo" "sudo npm install -g yo"
 
-installnode yo
-print_checking "yeoman"
+print_install  "vtop" "sudo npm install -g vtop"
 
-installnode vtop
-print_checking "vtop"
+print_install  "nativefier" "sudo npm install -g nativefier"
 
-installnode nativefier
-print_checking "nativefier"
+print_install  "generator-play-ideia" "sudo npm install -g generator-play-ideia"
 
-installnode generator-play-ideia
-print_checking "generator-play-ideia"
-
-installnode generator-locawebstyle
-print_checking "generator-locawebstyle"
+print_install  "generator-locawebstyle" "sudo npm install -g generator-locawebstyle"

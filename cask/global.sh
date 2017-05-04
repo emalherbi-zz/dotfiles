@@ -1,47 +1,35 @@
 source common/functions.sh
 
-function installcask() {
-		brew cask install "${@}"
-}
+print_install  "android-platform-tools" "brew cask install android-platform-tools"
 
-installcask google-chrome
-print_checking "google-chrome"
+print_install  "google-chrome" "brew cask install google-chrome"
 
-installcask google-chrome-canary
-print_checking "google-chrome-canary"
+print_install  "google-chrome-canary" "brew cask install google-chrome-canary"
 
-installcask torbrowser
-print_checking "torbrowser"
+print_install  "torbrowser" "brew cask install torbrowser"
 
-installcask imagealpha
-print_checking "imagealpha"
+print_install  "imagealpha" "brew cask install imagealpha"
 
-installcask imageoptim
-print_checking "imageoptim"
+print_install  "imageoptim" "brew cask install imageoptim"
 
-installcask vlc
-print_checking "vlc"
+print_install  "vlc" "brew cask install vlc"
 
-installcask miro-video-converter
-print_checking "miro-video-converter"
+print_install  "miro-video-converter" "brew cask install miro-video-converter"
 
-installcask the-unarchiver
-print_checking "the-unarchiver"
+print_install  "the-unarchiver" "brew cask install the-unarchiver"
 
-installcask transmission
-print_checking "transmission"
+print_install  "transmission" "brew cask install transmission"
 
-installcask ukelele
-print_checking "ukelele"
+print_install  "ukelele" "brew cask install ukelele"
 
-installcask virtualbox
-print_checking "virtualbox"
+print_install  "virtualbox" "brew cask install virtualbox"
 
-installcask iterm2
-print_checking "iterm2"
+print_install  "iterm2" "brew cask install iterm2"
 
-installcask macvim
-print_checking "macvim"
+print_install  "macvim" "brew cask install macvim"
 
-installcask atom
-print_checking "atom"
+print_install  "atom" "brew cask install atom"
+
+# Remove outdated versions from the cellar.
+brew cleanup
+print_checking "brew cask remove outdated versions from the cellar"

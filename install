@@ -14,16 +14,16 @@ print '$$    $$/ $$    $$/    $$ |   $$ |      / $$   |$$       |$$       |$$   
 print '$$$$$$$/   $$$$$$/     $$/    $$/       $$$$$$/ $$$$$$$$/ $$$$$$$$/  $$$$$$/  '
 
 if [ "$OS" = "OSX" ]; then
-    print_ln 'OS X Software Updates'
-    bash osx/global.sh
+    print_install "OS X Software Updates" "bash osx/global.sh"
 else
-    print_ln 'Linux Software Updates'
-    bash linux/global.sh
+    print_install "Linux Software Updates" "bash linux/global.sh"
 fi
 
 print_install "brew" "bash brew/global.sh"
 
-print_install "cask" "bash cask/global.sh"
+if [ "$OS" = "OSX" ]; then
+    print_install "cask" "bash cask/global.sh"
+fi
 
 print_install "node" "bash node/global.sh"
 

@@ -1,12 +1,16 @@
 source common/functions.sh
 
-if [ "$OS" = "OSX" ]; then
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+if which brew &> /dev/null; then
+    print_checking "homebrew"
 else
-    sudo apt-get install -y build-essential curl git python-setuptools ruby
-    sudo apt-get install -y linuxbrew-wrapper
+    if [ "$OS" = "OSX" ]; then
+        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    else
+        sudo apt-get install -y build-essential curl git python-setuptools ruby
+        sudo apt-get install -y linuxbrew-wrapper
+    fi
+    print_checking "homebrew"
 fi
-print_checking "brew"
 
 if [ "$OS" = "OSX" ]; then
     print_install  "caskroom/cask" "brew tap caskroom/cask"
@@ -32,8 +36,6 @@ print_install  "fish" "brew install fish"
 if [ "$OS" = "OSX" ]; then
   chsh -s /usr/local/bin/fish # fish default shell
 fi
-
-print_install  "android-platform-tools" "brew install android-platform-tools"
 
 # Make sure we’re using the latest Homebrew.
 brew update

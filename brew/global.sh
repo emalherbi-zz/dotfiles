@@ -19,7 +19,7 @@ fi
 if [ "$OS" = "OSX" ]; then
     print_install  "node" "brew install node"
 else
-    print_install  "node" "sudo apt install -y nodejs"
+    print_install  "node" "sudo apt install -y nodejs-legacy"
 fi
 
 print_install  "wifi-password" "brew install wifi-password"

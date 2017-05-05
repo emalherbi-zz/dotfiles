@@ -43,6 +43,7 @@ alias dcup='sudo docker-compose up'
 alias dcupd='sudo docker-compose up -d'
 
 # svn
-alias svnup='sudo svn update .'
 alias svnad='sudo svn add * --force'
 alias svnco='sudo svn commit -m'
+alias svnst='sudo svn status'
+alias svnup='sudo svn update .'

@@ -50,9 +50,10 @@ $ dcupd   ~ docker-compose up -d
 ## SVN Aliases
 
 ```bash
-$ svnup ~ svn update .
 $ svnad ~ svn add * --force
 $ svnco ~ svn commit -m
+$ svnst ~ sudo svn status
+$ svnup ~ svn update .
 ```
 
 ## Projects Aliases

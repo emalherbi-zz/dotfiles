@@ -36,15 +36,18 @@ $ git st  ~ status -sb
 ## Docker Aliases
 
 ```bash
-$ dcimg   ~ docker images
-$ dcps    ~ docker ps
-$ dcpsaq  ~ docker ps -a -q
-$ dcstop  ~ docker stop
-$ dcstart ~ docker start
-$ dcrm    ~ docker rm
-$ dcrmi   ~ docker rmi
-$ dcup    ~ docker-compose up
-$ dcupd   ~ docker-compose up -d
+$ dcimg     ~ sudo docker images
+$ dcps      ~ sudo docker ps
+$ dcpsaq    ~ sudo docker ps -a -q
+$ dcrm      ~ sudo docker rm
+$ dcrmall   ~ sudo docker rm $(docker ps -a -q)
+$ dcrmi     ~ sudo docker rmi
+$ dcrmiall  ~ sudo docker rmi $(docker ps -a -q)
+$ dcstop    ~ sudo docker stop
+$ dcstopall ~ sudo docker stop $(docker ps -a -q)
+$ dcstart   ~ sudo docker start
+$ dcup      ~ sudo docker-compose up
+$ dcupd     ~ sudo docker-compose up -d
 ```
 
 ## SVN Aliases

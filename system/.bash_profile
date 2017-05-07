@@ -31,6 +31,9 @@ alias sitesphp7='cd $HOME/Sites/apache-php/www/html'
 alias sitesphp5='cd $HOME/Sites/apache-php-mysql-phpmyadmin/www/html'
 alias sitesphp5mssql='cd $HOME/Sites/apache-php-mysql-mssql-phpmyadmin/www/html'
 
+# php composer
+alias composer='php /usr/local/bin/composer.phar'
+
 # docker
 alias dcimg='sudo docker images'
 alias dcps='sudo docker ps'

@@ -17,6 +17,7 @@
     ps = push
     pl = pull
     st = status -sb
+    up = pull
 [color]
     diff = auto
     grep = auto

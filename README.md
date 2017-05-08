@@ -31,6 +31,7 @@ $ git me  ~ merge
 $ git pl  ~ pull
 $ git ps  ~ push
 $ git st  ~ status -sb
+$ git up  ~ pull
 ```
 
 ## Docker Aliases
@@ -68,6 +69,12 @@ $ sitesphp5      ~ cd $HOME/Sites/apache-php-mysql-phpmyadmin/www/html
 $ sitesphp5mssql ~ cd $HOME/Sites/apache-php-mysql-mssql-phpmyadmin/www/html
 ```
 
+## Php Aliases
+
+```bash
+$ composer ~ php /usr/local/bin/composer.phar
+```
+
 ## Mac Aliases
 
 ```bash
@@ -78,6 +85,7 @@ $ gg           ~ open "http://www.google.com"
 $ home         ~ cd ~
 $ l            ~ ls -l
 $ la           ~ ls -la
+$ rm           ~ rm -rf
 $ trash        ~ rm -fr ~/.Trash
 $ showfiles    ~ defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder
 $ hidefiles    ~ defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder
@@ -100,6 +108,7 @@ $ home    ~ cd ~
 $ l       ~ ls -l
 $ la      ~ ls -la
 $ open    ~ nautilus
+$ rm      ~ rm -rf
 $ trash   ~ rm -rf ~/.local/share/Trash/*
 $ wheater ~ curl "http://wttr.in/Pato_Branco"
 ```

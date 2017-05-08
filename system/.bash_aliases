@@ -7,6 +7,7 @@ alias home='cd ~'
 alias l='ls -l'
 alias la='ls -la'
 alias open='nautilus'
+alias rm='sudo rm -rf'
 alias trash='rm -rf ~/.local/share/Trash/*'
 
 # finder
@@ -30,6 +31,9 @@ alias sites='cd $HOME/Sites/'
 alias sitesphp7='cd $HOME/Sites/apache-php/www/html'
 alias sitesphp5='cd $HOME/Sites/apache-php-mysql-phpmyadmin/www/html'
 alias sitesphp5mssql='cd $HOME/Sites/apache-php-mysql-mssql-phpmyadmin/www/html'
+
+# php
+# composer only mac
 
 # docker
 alias dcimg='sudo docker images'

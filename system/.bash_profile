@@ -7,6 +7,7 @@ alias home='cd ~'
 alias l='ls -l'
 alias la='ls -la'
 # open only linux
+alias rm='sudo rm -rf'
 alias trash='rm -fr ~/.Trash'
 
 # finder
@@ -31,7 +32,7 @@ alias sitesphp7='cd $HOME/Sites/apache-php/www/html'
 alias sitesphp5='cd $HOME/Sites/apache-php-mysql-phpmyadmin/www/html'
 alias sitesphp5mssql='cd $HOME/Sites/apache-php-mysql-mssql-phpmyadmin/www/html'
 
-# php composer
+# php
 alias composer='php /usr/local/bin/composer.phar'
 
 # docker

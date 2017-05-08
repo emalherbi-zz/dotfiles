@@ -72,7 +72,7 @@ $ sitesphp5mssql ~ cd $HOME/Sites/apache-php-mysql-mssql-phpmyadmin/www/html
 ## Php Aliases
 
 ```bash
-$ composer ~ php /usr/local/bin/composer.phar
+$ composer ~ php /usr/local/bin/composer.phar (only mac)
 ```
 
 ## Mac Aliases

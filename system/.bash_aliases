@@ -28,9 +28,6 @@ alias wheater='curl "http://wttr.in/Pato_Branco"'
 
 # projects
 alias sites='cd $HOME/Sites/'
-alias sitesphp7='cd $HOME/Sites/apache-php/www/html'
-alias sitesphp5='cd $HOME/Sites/apache-php-mysql-phpmyadmin/www/html'
-alias sitesphp5mssql='cd $HOME/Sites/apache-php-mysql-mssql-phpmyadmin/www/html'
 
 # php
 # composer only mac
@@ -42,10 +39,11 @@ alias dcpsaq='sudo docker ps -a -q'
 alias dcrm='sudo docker rm'
 alias dcrmall='sudo docker rm $(docker ps -a -q)'
 alias dcrmi='sudo docker rmi'
-alias dcrmiall='sudo docker rmi $(docker ps -a -q)'
+alias dcrmiall='sudo docker rmi $(docker images -q)'
 alias dcstop='sudo docker stop'
 alias dcstopall='sudo docker stop $(docker ps -a -q)'
 alias dcstart='sudo docker start'
+alias dcstartall='sudo docker start $(docker ps -a -q)'
 alias dcup='sudo docker-compose up'
 alias dcupd='sudo docker-compose up -d'
 

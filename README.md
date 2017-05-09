@@ -37,18 +37,19 @@ $ git up  ~ pull
 ## Docker Aliases
 
 ```bash
-$ dcimg     ~ sudo docker images
-$ dcps      ~ sudo docker ps
-$ dcpsaq    ~ sudo docker ps -a -q
-$ dcrm      ~ sudo docker rm
-$ dcrmall   ~ sudo docker rm $(docker ps -a -q)
-$ dcrmi     ~ sudo docker rmi
-$ dcrmiall  ~ sudo docker rmi $(docker ps -a -q)
-$ dcstop    ~ sudo docker stop
-$ dcstopall ~ sudo docker stop $(docker ps -a -q)
-$ dcstart   ~ sudo docker start
-$ dcup      ~ sudo docker-compose up
-$ dcupd     ~ sudo docker-compose up -d
+$ dcimg      ~ sudo docker images
+$ dcps       ~ sudo docker ps
+$ dcpsaq     ~ sudo docker ps -a -q
+$ dcrm       ~ sudo docker rm
+$ dcrmall    ~ sudo docker rm $(docker ps -a -q)
+$ dcrmi      ~ sudo docker rmi
+$ dcrmiall   ~ sudo docker rmi $(docker images -q)
+$ dcstop     ~ sudo docker stop
+$ dcstopall  ~ sudo docker stop $(docker ps -a -q)
+$ dcstart    ~ sudo docker start
+$ dcstartall ~ sudo docker start $(docker ps -a -q)
+$ dcup       ~ sudo docker-compose up
+$ dcupd      ~ sudo docker-compose up -d
 ```
 
 ## SVN Aliases
@@ -63,10 +64,7 @@ $ svnup ~ svn update .
 ## Projects Aliases
 
 ```bash
-$ sites          ~ cd $HOME/Sites/
-$ sitesphp7      ~ cd $HOME/Sites/apache-php/www/html
-$ sitesphp5      ~ cd $HOME/Sites/apache-php-mysql-phpmyadmin/www/html
-$ sitesphp5mssql ~ cd $HOME/Sites/apache-php-mysql-mssql-phpmyadmin/www/html
+$ sites ~ cd $HOME/Sites/
 ```
 
 ## Php Aliases

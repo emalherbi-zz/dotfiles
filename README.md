@@ -155,6 +155,7 @@ $ wheater ~ curl "http://wttr.in/Pato_Branco"
 |  => grunt-init ✔
 |  => bower ✔
 |  => yeoman ✔
+|  => ionic ✔
 |  => vtop ✔
 |  => nativefier ✔
 |  => generator-play-ideia ✔

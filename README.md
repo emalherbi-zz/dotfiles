@@ -129,6 +129,7 @@ $ wheater ~ curl "http://wttr.in/Pato_Branco"
 ```
 => linux ✔
 |  => emma
+|  => pysvn
 => homebrew ✔
 |  => cask ✔
 |  => node ✔
@@ -136,7 +137,7 @@ $ wheater ~ curl "http://wttr.in/Pato_Branco"
 |  => svn ✔
 |  => ant ✔
 |  => fish ✔
-|  => android-platform-tools ✔
+|  => vim ✔
 => cask ✔ (only mac)
 |  => google-chrome ✔
 |  => google-chrome-canary ✔
@@ -152,6 +153,7 @@ $ wheater ~ curl "http://wttr.in/Pato_Branco"
 |  => iterm2 ✔
 |  => macvim ✔
 |  => atom ✔
+|  => android-platform-tools ✔
 => node ✔
 |  => grunt ✔
 |  => grunt-init ✔

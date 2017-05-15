@@ -33,6 +33,13 @@ if [ "$OS" = "OSX" ]; then
   chsh -s /usr/local/bin/fish # fish default shell
 fi
 
+if [ "$OS" = "OSX" ]; then
+    print_install  "vim" "brew install vim"
+    print_install  "vim" "brew install macvim --with-override-system-vim"
+else
+    print_install  "vim" "brew install vim"
+fi
+
 # Make sure we’re using the latest Homebrew.
 brew update
 print_checking "brew update"

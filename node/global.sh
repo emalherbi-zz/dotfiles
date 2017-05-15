@@ -8,6 +8,8 @@ print_install  "bower" "sudo npm install -g bower"
 
 print_install  "yo" "sudo npm install -g yo"
 
+print_install  "ionic" "sudo npm install -g cordova ionic"
+
 print_install  "vtop" "sudo npm install -g vtop"
 
 print_install  "nativefier" "sudo npm install -g nativefier"

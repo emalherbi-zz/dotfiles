@@ -127,6 +127,8 @@ $ wheater ~ curl "http://wttr.in/Pato_Branco"
 ## Gems e etc
 
 ```
+=> linux ✔
+|  => emma
 => homebrew ✔
 |  => cask ✔
 |  => node ✔

@@ -18,16 +18,12 @@ fi
 
 if [ "$OS" = "OSX" ]; then
     print_install  "node" "brew install node"
-else
-    print_install  "node" "sudo apt install -y nodejs-legacy"
 fi
 
 print_install  "wifi-password" "brew install wifi-password"
 
 if [ "$OS" = "OSX" ]; then
     print_install  "svn" "brew install subversion"
-else
-    print_install  "svn" "sudo apt-get install -y subversion"
 fi
 
 print_install  "ant" "brew install ant"

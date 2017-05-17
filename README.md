@@ -37,6 +37,7 @@ $ git up  ~ pull
 ## Docker Aliases
 
 ```bash
+$ dcwww      ~ cd $HOME/Sites/docker
 $ dcimg      ~ sudo docker images
 $ dcps       ~ sudo docker ps
 $ dcpsaq     ~ sudo docker ps -a -q
@@ -65,6 +66,7 @@ $ svnup ~ svn update .
 
 ```bash
 $ sites ~ cd $HOME/Sites/
+$ www   ~ cd $HOME/Sites/docker/www/html
 ```
 
 ## Php Aliases
@@ -127,17 +129,16 @@ $ wheater ~ curl "http://wttr.in/Pato_Branco"
 ## Gems e etc
 
 ```
-=> linux ✔
-|  => emma
-|  => pysvn
 => homebrew ✔
 |  => cask ✔
 |  => node ✔
 |  => wifi-password ✔
 |  => svn ✔
+|  => pysvn ✔
 |  => ant ✔
 |  => fish ✔
 |  => vim ✔
+|  => emma ✔
 => cask ✔ (only mac)
 |  => google-chrome ✔
 |  => google-chrome-canary ✔

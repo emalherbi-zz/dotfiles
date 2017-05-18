@@ -44,7 +44,7 @@ fi
 
 if [ "$OS" = "OSX" ]; then
     print_install  "vim" "brew install vim"
-    print_install  "vim" "brew install macvim --with-override-system-vim"
+    print_install  "macvim" "brew install macvim --with-override-system-vim"
 else
     print_install  "vim" "brew install vim"
 fi

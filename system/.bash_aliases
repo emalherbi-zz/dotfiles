@@ -1,5 +1,6 @@
 # general
 alias ..='cd ..'
+alias badblocks='sudo badblocks -sv -c 1024'
 alias c='clear'
 alias chr='sudo chmod -R 777'
 alias gg='sensible-browser "http://www.google.com"'

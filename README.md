@@ -100,17 +100,18 @@ $ wheater      ~ curl "http://wttr.in/Pato_Branco"
 ## Linux Aliases
 
 ```bash
-$ ..      ~ cd ..
-$ c       ~ clear
-$ chr     ~ chmod -R 777
-$ gg      ~ sensible-browser "http://www.google.com"
-$ home    ~ cd ~
-$ l       ~ ls -l
-$ la      ~ ls -la
-$ open    ~ nautilus
-$ rm      ~ rm -rf
-$ trash   ~ rm -rf ~/.local/share/Trash/*
-$ wheater ~ curl "http://wttr.in/Pato_Branco"
+$ ..        ~ cd ..
+$ badblocks ~ sudo badblocks -sv -c 1024 /dev/sdaX
+$ c         ~ clear
+$ chr       ~ chmod -R 777
+$ gg        ~ sensible-browser "http://www.google.com"
+$ home      ~ cd ~
+$ l         ~ ls -l
+$ la        ~ ls -la
+$ open      ~ nautilus
+$ rm        ~ rm -rf
+$ trash     ~ rm -rf ~/.local/share/Trash/*
+$ wheater   ~ curl "http://wttr.in/Pato_Branco"
 ```
 
 ## Utils

@@ -1,5 +1,6 @@
 # general
 alias ..='cd ..'
+# badblocks only linux
 alias c='clear'
 alias chr='sudo chmod -R 777'
 alias gg='open "http://www.google.com"'

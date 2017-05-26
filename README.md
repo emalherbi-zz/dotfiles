@@ -42,13 +42,13 @@ $ dcimg      ~ sudo docker images
 $ dcps       ~ sudo docker ps
 $ dcpsaq     ~ sudo docker ps -a -q
 $ dcrm       ~ sudo docker rm
-$ dcrmall    ~ sudo docker rm $(docker ps -a -q)
+$ dcrmall    ~ sudo docker rm $(sudo docker ps -a -q)
 $ dcrmi      ~ sudo docker rmi
-$ dcrmiall   ~ sudo docker rmi $(docker images -q)
+$ dcrmiall   ~ sudo docker rmi $(sudo docker images -q)
 $ dcstop     ~ sudo docker stop
-$ dcstopall  ~ sudo docker stop $(docker ps -a -q)
+$ dcstopall  ~ sudo docker stop $(sudo docker ps -a -q)
 $ dcstart    ~ sudo docker start
-$ dcstartall ~ sudo docker start $(docker ps -a -q)
+$ dcstartall ~ sudo docker start $(sudo docker ps -a -q)
 $ dcup       ~ sudo docker-compose up
 $ dcupd      ~ sudo docker-compose up -d
 ```

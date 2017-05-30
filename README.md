@@ -139,7 +139,6 @@ $ wheater   ~ curl "http://wttr.in/Pato_Branco"
 |  => ant ✔
 |  => fish ✔
 |  => vim ✔
-|  => emma ✔
 => cask ✔ (only mac)
 |  => google-chrome ✔
 |  => google-chrome-canary ✔

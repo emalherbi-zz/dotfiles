@@ -49,10 +49,6 @@ else
     print_install  "vim" "brew install vim"
 fi
 
-if [ "$OS" != "OSX" ]; then
-    print_install  "emma" "sudo apt-get install -y emma"
-fi
-
 # Make sure we’re using the latest Homebrew.
 brew update
 print_checking "brew update"

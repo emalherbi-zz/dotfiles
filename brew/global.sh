@@ -30,11 +30,6 @@ else
     print_install  "svn" "sudo apt-get install -y subversion"
 fi
 
-if [ "$OS" != "OSX" ]; then
-    print_install  "python-svn" "sudo apt-get install python-svn"
-    print_install  "svn-workbench" "sudo apt-get install svn-workbench"
-fi
-
 print_install  "ant" "brew install ant"
 
 print_install  "fish" "brew install fish"

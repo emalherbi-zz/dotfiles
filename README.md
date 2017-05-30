@@ -135,7 +135,6 @@ $ wheater   ~ curl "http://wttr.in/Pato_Branco"
 |  => node ✔
 |  => wifi-password ✔
 |  => svn ✔
-|  => pysvn ✔
 |  => ant ✔
 |  => fish ✔
 |  => vim ✔

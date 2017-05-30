@@ -75,7 +75,7 @@ $ www   ~ cd $HOME/Sites/docker/www/html
 $ composer ~ php /usr/local/bin/composer.phar (only mac)
 ```
 
-## Mac/Linux Aliases
+## Mac Aliases
 
 ```bash
 $ ..           ~ cd ..

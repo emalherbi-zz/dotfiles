@@ -75,7 +75,7 @@ $ www   ~ cd $HOME/Sites/docker/www/html
 $ composer ~ php /usr/local/bin/composer.phar (only mac)
 ```
 
-## Mac Aliases
+## Mac/Linux Aliases
 
 ```bash
 $ ..           ~ cd ..
@@ -85,7 +85,7 @@ $ gg           ~ open "http://www.google.com"
 $ home         ~ cd ~
 $ l            ~ ls -l
 $ la           ~ ls -la
-$ rm           ~ rm -rf
+$ rmrf         ~ rm -rf
 $ trash        ~ rm -fr ~/.Trash
 $ showfiles    ~ defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder
 $ hidefiles    ~ defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder
@@ -109,7 +109,7 @@ $ home      ~ cd ~
 $ l         ~ ls -l
 $ la        ~ ls -la
 $ open      ~ nautilus
-$ rm        ~ rm -rf
+$ rmrf      ~ rm -rf
 $ trash     ~ rm -rf ~/.local/share/Trash/*
 $ wheater   ~ curl "http://wttr.in/Pato_Branco"
 ```

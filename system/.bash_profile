@@ -2,13 +2,13 @@
 alias ..='cd ..'
 # badblocks only linux
 alias c='clear'
-alias chr='sudo chmod -R 777'
+alias chr='chmod -R 777'
 alias gg='open "http://www.google.com"'
 alias home='cd ~'
 alias l='ls -l'
 alias la='ls -la'
-# open only linux
-alias rm='sudo rm -rf'
+# open is native mac, only linux
+alias rmrf='rm -rf'
 alias trash='rm -fr ~/.Trash'
 
 # finder
@@ -25,26 +25,28 @@ alias tm='top -o vsize' # memory
 alias tu='top -o cpu' # cpu
 
 # wheater
-alias weatherpb='curl "http://wttr.in/Pato_Branco"'
+alias weather='curl "http://wttr.in/Pato_Branco"'
 
 # projects
 alias sites='cd $HOME/Sites/'
+alias www='cd $HOME/Sites/docker/www/html'
 
 # php
 alias composer='php /usr/local/bin/composer.phar'
 
 # docker
+alias dcwww='cd $HOME/Sites/docker'
 alias dcimg='sudo docker images'
 alias dcps='sudo docker ps'
 alias dcpsaq='sudo docker ps -a -q'
 alias dcrm='sudo docker rm'
-alias dcrmall='sudo docker rm $(docker ps -a -q)'
+alias dcrmall='sudo docker rm $(sudo docker ps -a -q)'
 alias dcrmi='sudo docker rmi'
-alias dcrmiall='sudo docker rmi $(docker images -q)'
+alias dcrmiall='sudo docker rmi $(sudo docker images -q)'
 alias dcstop='sudo docker stop'
-alias dcstopall='sudo docker stop $(docker ps -a -q)'
+alias dcstopall='sudo docker stop $(sudo docker ps -a -q)'
 alias dcstart='sudo docker start'
-alias dcstartall='sudo docker start $(docker ps -a -q)'
+alias dcstartall='sudo docker start $(sudo docker ps -a -q)'
 alias dcup='sudo docker-compose up'
 alias dcupd='sudo docker-compose up -d'
 

@@ -1,14 +1,14 @@
 # general
 alias ..='cd ..'
-alias badblocks='sudo badblocks -sv -c 1024'
+alias badblocks='badblocks -sv -c 1024'
 alias c='clear'
-alias chr='sudo chmod -R 777'
+alias chr='chmod -R 777'
 alias gg='sensible-browser "http://www.google.com"'
 alias home='cd ~'
 alias l='ls -l'
 alias la='ls -la'
 alias open='nautilus'
-alias rm='sudo rm -rf'
+alias rmrf='rm -rf'
 alias trash='rm -rf ~/.local/share/Trash/*'
 
 # finder

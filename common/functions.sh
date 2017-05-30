@@ -27,17 +27,17 @@ function print_checking() {
 }
 function print_install() {
   while true; do
-      read -p "Do you wish to install $1 packages? [Y/n] " yn
+      read -p "Do you wish to install $1? [Y/n] " yn
       case $yn in
           [Yy]* )
-            print_ln "Install $1 packages"
+            print_ln "Install $1"
             $2
 						print_checking "$1"
             break;;
           [Nn]* )
-            print_alert "Not install $1 packages"
+            print_alert "Not install $1"
             break;;
-          * ) echo "Please answer Yes or No.";;
+          * ) echo "Please answer Y [Yes] or N [No].";;
       esac
   done
 }

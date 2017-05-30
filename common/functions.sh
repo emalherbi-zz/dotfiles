@@ -35,7 +35,7 @@ function print_install() {
 						print_checking "$1"
             break;;
           [Nn]* )
-            print_alert "Not install $1"
+            print_alert "Cancel install $1"
             break;;
           * ) echo "Please answer Y [Yes] or N [No].";;
       esac

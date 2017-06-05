@@ -1,5 +1,9 @@
 # My dotfiles for Mac/Linux (Ubuntu)
 
+## Installation Prerequisites
+
+#### [Atom](https://atom.io/)
+
 ## Instalation
 
 ```bash

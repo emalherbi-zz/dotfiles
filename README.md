@@ -51,6 +51,7 @@ $ dcstart    ~ sudo docker start
 $ dcstartall ~ sudo docker start $(sudo docker ps -a -q)
 $ dcup       ~ sudo docker-compose up
 $ dcupd      ~ sudo docker-compose up -d
+$ dcupall    ~ sudo docker-compose up -d db && sleep 5 && sudo docker-compose up -d phpmyadmin && sleep 5 && sudo docker-compose up -d php
 ```
 
 ## SVN Aliases

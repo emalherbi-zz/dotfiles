@@ -2,8 +2,6 @@ source common/functions.sh
 
 print_install  "atom-beautify" "sudo apm install atom-beautify"
 
-print_install  "autocomplete-plus" "sudo apm install autocomplete-plus"
-
 print_install  "docblockr" "sudo apm install docblockr"
 
 print_install  "editorconfig" "sudo apm install editorconfig"

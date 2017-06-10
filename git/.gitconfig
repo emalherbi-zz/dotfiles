@@ -40,7 +40,7 @@
     untracked = cyan
 [core]
 	excludesfile = ~/.gitignore
-	autocrlf = true
+	autocrlf = false
 [push]
     default = simple
 [filter "media"]

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 source common/functions.sh
 
 print_install  "grunt-cli" "sudo npm install -g grunt-cli"

@@ -1,3 +1,5 @@
+#!/bin/bash
+
 source common/functions.sh
 
 if which brew &> /dev/null; then

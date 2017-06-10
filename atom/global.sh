@@ -1,3 +1,5 @@
+#!/bin/bash
+
 source common/functions.sh
 
 print_install  "atom-beautify" "sudo apm install atom-beautify"

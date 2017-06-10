@@ -1,3 +1,5 @@
+#!/bin/bash
+
 source common/functions.sh
 
 sudo apt-get update

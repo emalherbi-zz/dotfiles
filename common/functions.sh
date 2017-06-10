@@ -1,22 +1,22 @@
 #!/bin/bash
 
-function print() {
+function print {
 	echo -e "\033[0;36m $1 \033[0m";
 }
 
-function print_start() {
+function print_start {
 	echo -e "\033[1;36m=> $1\033[0m";
 }
 
-function print_alert() {
+function print_alert {
 	echo -e "\033[1;31m=> $1 ✖\033[0m";
 }
 
-function print_checking() {
+function print_checking {
 	echo -e "\033[1;32m=> $1 ✔\033[0m";
 }
 
-function print_install() {
+function print_install {
     while true; do
         read -p "Do you wish to install $1? [Y/n] " yn;
         case $yn in

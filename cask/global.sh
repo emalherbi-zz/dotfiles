@@ -1,3 +1,5 @@
+#!/bin/bash
+
 source common/functions.sh
 
 print_install  "android-platform-tools" "brew cask install android-platform-tools"

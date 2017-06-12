@@ -2,7 +2,7 @@
 
 source common/functions.sh
 
-print_install  "grunt-cli" "sudo npm install -g grunt-cli"
+print_checking_install "grunt-cli" "npm list -g grunt-cli" "sudo npm install -g grunt-cli"
 
 print_install  "grunt-init" "sudo npm install -g grunt-init"
 

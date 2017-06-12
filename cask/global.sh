@@ -6,6 +6,8 @@ print_install  "java" "brew cask install java"
 
 print_install  "android-platform-tools" "brew cask install android-platform-tools"
 
+print_install  "android-sdk" "brew cask install android-sdk"
+
 print_install  "google-chrome" "brew cask install google-chrome"
 
 print_install  "google-chrome-canary" "brew cask install google-chrome-canary"

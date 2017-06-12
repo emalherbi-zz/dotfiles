@@ -2,6 +2,8 @@
 
 source common/functions.sh
 
+print_install  "java" "brew cask install java"
+
 print_install  "android-platform-tools" "brew cask install android-platform-tools"
 
 print_install  "google-chrome" "brew cask install google-chrome"

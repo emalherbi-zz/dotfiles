@@ -50,6 +50,7 @@ alias dcstart='sudo docker start'
 alias dcstartall='sudo docker start $(sudo docker ps -a -q)'
 alias dcup='sudo docker-compose up'
 alias dcupd='sudo docker-compose up -d'
+alias dcupdf='sudo docker-compose up -d --force-recreate'
 alias dcupall='sudo docker-compose up -d db && sleep 5 && sudo docker-compose up -d phpmyadmin && sleep 5 && sudo docker-compose up -d php'
 
 # svn

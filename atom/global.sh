@@ -18,6 +18,8 @@ print_install  "linter-htmlhint" "sudo apm install linter-htmlhint"
 
 print_install  "linter-jshint" "sudo apm install linter-jshint"
 
+print_install  "linter-shellcheck" "sudo apm install linter-shellcheck"
+
 print_install  "minimap" "sudo apm install minimap"
 
 print_install  "minimap-highlight-selected" "sudo apm install minimap-highlight-selected"

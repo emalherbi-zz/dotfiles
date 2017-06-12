@@ -3,10 +3,9 @@
 source common/functions.sh
 
 if [ "$OS" = "OSX" ]; then
-  sudo gem update --system
+    print_checking_install  "gem" "which gem" "sudo gem update --system"
 else
-  sudo apt-get install ruby ruby-dev make gcc
+    print_checking_install  "gem" "which gem" "sudo apt-get install ruby ruby-dev make gcc"
 fi
-print_checking "gem"
 
-print_install  "jekyll" "sudo gem install jekyll bundler"
+print_checking_install  "jekyll" "which jekyll" "sudo gem install jekyll bundler"

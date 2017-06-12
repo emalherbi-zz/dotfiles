@@ -20,21 +20,21 @@ else
     print_install "Linux Software Updates" "bash linux/global.sh"
 fi
 
-print_install "brew" "bash brew/global.sh"
+bash brew/global.sh
 
 if [ "$OS" = "OSX" ]; then
     print_install "cask" "bash cask/global.sh"
 fi
 
-print_install "ruby" "bash ruby/global.sh"
+bash ruby/global.sh
 
-print_install "aptitude" "bash aptitude/global.sh"
+bash aptitude/global.sh
 
 print_install "node" "bash node/global.sh"
 
 print_install "atom" "bash atom/global.sh"
 
-print_install "dotfiles" "bash common/dotfiles.sh"
+bash common/dotfiles.sh
 
 # TODO
 # 1>/dev/null 2>&1

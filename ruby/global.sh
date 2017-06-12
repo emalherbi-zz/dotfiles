@@ -9,5 +9,4 @@ else
 fi
 print_checking "gem"
 
-sudo gem install jekyll bundler
-print_checking "jekyll"
+print_install  "jekyll" "sudo gem install jekyll bundler"

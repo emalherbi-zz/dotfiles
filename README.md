@@ -92,6 +92,7 @@ $ l            ~ ls -l
 $ la           ~ ls -la
 $ rmrf         ~ rm -rf
 $ trash        ~ rm -fr ~/.Trash
+$ u            ~ id -un
 $ showfiles    ~ defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder
 $ hidefiles    ~ defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder
 $ cleanup      ~ find . -type f -name '*.DS_Store' -ls -delete
@@ -116,6 +117,7 @@ $ la        ~ ls -la
 $ open      ~ nautilus
 $ rmrf      ~ rm -rf
 $ trash     ~ rm -rf ~/.local/share/Trash/*
+$ u         ~ id -un
 $ wheater   ~ curl "http://wttr.in/Pato_Branco"
 ```
 

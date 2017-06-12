@@ -10,6 +10,7 @@ alias la='ls -la'
 # open is native mac, only linux
 alias rmrf='rm -rf'
 alias trash='rm -fr ~/.Trash'
+alias u='id -un'
 
 # finder
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'

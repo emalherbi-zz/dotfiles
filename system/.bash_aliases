@@ -10,6 +10,7 @@ alias la='ls -la'
 alias open='nautilus'
 alias rmrf='rm -rf'
 alias trash='rm -rf ~/.local/share/Trash/*'
+alias u='id -un'
 
 # finder
 # showfiles only mac

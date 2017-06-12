@@ -2,14 +2,10 @@
 
 source common/functions.sh
 
-if which brew &> /dev/null; then
-    print_checking "homebrew"
+if [ "$OS" = "OSX" ]; then
+    print_checking_install  "homebrew" "which brew" "/usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'"
 else
-    if [ "$OS" = "OSX" ]; then
-        print_install  "homebrew" "/usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'"
-    else
-        print_install  "linuxbrew" "sudo apt-get install -y build-essential curl file git python-setuptools ruby linuxbrew-wrapper"
-    fi
+    print_checking_install  "linuxbrew" "which brew" "sudo apt-get install -y build-essential curl file git python-setuptools ruby linuxbrew-wrapper"
 fi
 
 # Not Working With: brew ls --versions caskroom/cask

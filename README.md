@@ -140,11 +140,12 @@ $ wheater   ~ curl "http://wttr.in/Pato_Branco"
 => homebrew ✔
 |  => cask ✔
 |  => node ✔
-|  => wifi-password ✔
 |  => svn ✔
 |  => ant ✔
-|  => fish ✔
+|  => gradle ✔
 |  => vim ✔
+|  => fish ✔
+|  => wifi-password ✔
 => cask ✔ (only mac)
 |  => google-chrome ✔
 |  => google-chrome-canary ✔

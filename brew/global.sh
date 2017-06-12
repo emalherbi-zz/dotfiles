@@ -19,8 +19,6 @@ else
     print_checking_install "node" "which node" "sudo apt install -y nodejs-legacy npm"
 fi
 
-print_checking_install "wifi-password" "brew ls --versions wifi-password" "brew install wifi-password"
-
 if [ "$OS" = "OSX" ]; then
     print_checking_install "svn" "brew ls --versions svn" "brew install subversion"
 else
@@ -29,13 +27,17 @@ fi
 
 print_checking_install "ant" "brew ls --versions ant" "brew install ant"
 
-print_checking_install "fish" "brew ls --versions fish" "brew install fish"
+print_checking_install "gradle" "brew ls --versions gradle" "brew install gradle"
 
 print_checking_install "vim" "brew ls --versions vim" "brew install vim"
 
 if [ "$OS" = "OSX" ]; then
     print_checking_install "macvim" "brew ls --versions macvim" "brew install macvim --with-override-system-vim"
 fi
+
+print_checking_install "fish" "brew ls --versions fish" "brew install fish"
+
+print_checking_install "wifi-password" "brew ls --versions wifi-password" "brew install wifi-password"
 
 # Config
 

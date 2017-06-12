@@ -8,7 +8,7 @@ else
     if [ "$OS" = "OSX" ]; then
         print_install  "homebrew" "/usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'"
     else
-        print_install  "build-essential" "sudo apt-get install -y build-essential curl git python-setuptools ruby"
+        print_install  "build-essential" "sudo apt-get install -y build-essential curl file git python-setuptools ruby"
         print_install  "linuxbrew" "sudo apt-get install -y linuxbrew-wrapper"
     fi
 fi

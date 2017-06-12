@@ -33,6 +33,27 @@ function print_install {
     done
 }
 
+function print_checking_install {
+    if $2 &> /dev/null; then
+        print_checking "$1"
+    else
+        while true; do
+            read -p "Do you wish to install $1? [Y/n] " yn;
+            case $yn in
+                [Yy]* )
+                    print_start "Starting installation: $1";
+                    $3;
+                    print_checking "Successfully installed: $1";
+                    break;;
+                [Nn]* )
+                    print_alert "Canceled: $1";
+                    break;;
+                * ) echo "Please answer Y [Yes] or N [No].";;
+            esac
+        done
+    fi
+}
+
 if [ "$(uname -s)" = "Darwin" ]; then
     OS="OSX"
 else

@@ -8,77 +8,49 @@ else
     if [ "$OS" = "OSX" ]; then
         print_install  "homebrew" "/usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'"
     else
-        print_install  "build-essential" "sudo apt-get install -y build-essential curl file git python-setuptools ruby"
-        print_install  "linuxbrew" "sudo apt-get install -y linuxbrew-wrapper"
+        print_install  "linuxbrew" "sudo apt-get install -y build-essential curl file git python-setuptools ruby linuxbrew-wrapper"
     fi
 fi
 
-# TODO (Not Working With: brew ls --versions caskroom/cask)
+# Not Working With: brew ls --versions caskroom/cask
 if [ "$OS" = "OSX" ]; then
     print_install  "caskroom/cask" "brew tap caskroom/cask"
 fi
 
 if [ "$OS" = "OSX" ]; then
-    if brew ls --versions node &> /dev/null; then
-        print_checking "node"
-    else
-        print_install  "node" "brew install node"
-    fi
+    print_checking_install "node" "brew ls --versions node" "brew install node"
 else
-    if which node &> /dev/null; then
-        print_checking "node"
-    else
-        print_install  "node" "sudo apt install -y nodejs-legacy"
-        print_install  "npm" "sudo apt-get install npm"
-    fi
+    print_checking_install "node" "which node" "sudo apt install -y nodejs-legacy npm"
 fi
 
-if brew ls --versions wifi-password &> /dev/null; then
-    print_checking "wifi-password"
-else
-    print_install  "wifi-password" "brew install wifi-password"
-fi
+print_checking_install "wifi-password" "brew ls --versions wifi-password" "brew install wifi-password"
 
 if [ "$OS" = "OSX" ]; then
-    if brew ls --versions svn &> /dev/null; then
-        print_checking "svn"
-    else
-        print_install  "svn" "brew install subversion"
-    fi
+    print_checking_install "svn" "brew ls --versions svn" "brew install subversion"
 else
-    if which svn &> /dev/null; then
-        print_checking "svn"
-    else
-        print_install  "svn" "sudo apt-get install -y subversion"
-    fi
+    print_checking_install "svn" "which svn" "sudo apt-get install -y subversion"
 fi
 
-if brew ls --versions ant &> /dev/null; then
-    print_checking "ant"
-else
-    print_install  "ant" "brew install ant"
+print_checking_install "ant" "brew ls --versions ant" "brew install ant"
+
+print_checking_install "fish" "brew ls --versions fish" "brew install fish"
+
+print_checking_install "vim" "brew ls --versions vim" "brew install vim"
+
+if [ "$OS" = "OSX" ]; then
+    print_checking_install "macvim" "brew ls --versions macvim" "brew install macvim --with-override-system-vim"
 fi
 
+# Config
+
+# Set Fish default shell
 if brew ls --versions fish &> /dev/null; then
-    print_checking "fish"
+    print_checking "fish default shell"
 else
-    print_install  "fish" "brew install fish"
-
-    # fish default shell
     if [ "$OS" = "OSX" ]; then
       chsh -s /usr/local/bin/fish
     else
       chsh -s `which fish`
-    fi
-fi
-
-if brew ls --versions vim &> /dev/null; then
-    print_checking "vim"
-else
-    print_install  "vim" "brew install vim"
-
-    if [ "$OS" = "OSX" ]; then
-        print_install  "macvim" "brew install macvim --with-override-system-vim"
     fi
 fi
 

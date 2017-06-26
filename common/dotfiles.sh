@@ -2,6 +2,8 @@
 
 source common/functions.sh
 
+print_start "Starting installation: Dotfiles";
+
 if [ "$OS" = "OSX" ]; then
     # .osx
     if [ -f "osx/.osx" ]; then
@@ -60,3 +62,5 @@ fi
 
 # this file prevents the shell login message
 sudo touch ~/.hushlogin
+
+print_finish "Finished Successfully: Dotfiles";

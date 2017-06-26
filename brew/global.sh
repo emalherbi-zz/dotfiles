@@ -2,6 +2,8 @@
 
 source common/functions.sh
 
+print_start "Starting installation: Brew";
+
 if [ "$OS" = "OSX" ]; then
     print_checking_install  "homebrew" "which brew" "/usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'"
 else
@@ -63,3 +65,5 @@ print_checking "brew update all packages"
 # Remove outdated versions from the cellar.
 brew cleanup
 print_checking "brew remove outdated versions from the cellar"
+
+print_finish "Finished Successfully: Brew";

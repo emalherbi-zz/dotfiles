@@ -1,11 +1,15 @@
 #!/bin/bash
 
 function print {
-	echo -e "\033[0;36m $1 \033[0m";
+	echo -e "\033[1;36m $1 \033[0m";
 }
 
 function print_start {
-	echo -e "\033[1;36m=> $1\033[0m";
+	echo -e "\033[1;37m=> $1\033[0m";
+}
+
+function print_finish {
+	echo -e "\033[1;37m=> $1\033[0m";
 }
 
 function print_alert {

@@ -11,6 +11,7 @@ alias la='ls -la'
 alias rmrf='rm -rf'
 alias trash='rm -fr ~/.Trash'
 alias u='id -un'
+alias ipconfig="ifconfig | grep 'inet ' | grep -Fv 127.0.0.1 | awk '{print $2}'"
 
 # finder
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'

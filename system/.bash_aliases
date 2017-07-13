@@ -2,16 +2,16 @@
 alias ..='cd ..'
 alias badblocks='badblocks -sv -c 1024'
 alias c='clear'
-alias chr='chmod -R 777'
+alias chr='sudo chmod -R 777'
 alias gg='sensible-browser "http://www.google.com"'
 alias home='cd ~'
 alias l='ls -l'
 alias la='ls -la'
 alias open='nautilus'
-alias rmrf='rm -rf'
-alias trash='rm -rf ~/.local/share/Trash/*'
+alias rmrf='sudo rm -rf'
+alias trash='sudo rm -rf ~/.local/share/Trash/*'
 alias u='id -un'
-alias ipcfg="ifconfig"
+alias ipcfg='ifconfig'
 
 # finder
 # showfiles only mac

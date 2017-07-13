@@ -2,14 +2,14 @@
 alias ..='cd ..'
 # badblocks only linux
 alias c='clear'
-alias chr='chmod -R 777'
+alias chr='sudo chmod -R 777'
 alias gg='open "http://www.google.com"'
 alias home='cd ~'
 alias l='ls -l'
 alias la='ls -la'
 # open is native mac, only linux
-alias rmrf='rm -rf'
-alias trash='rm -fr ~/.Trash'
+alias rmrf='sudo rm -rf'
+alias trash='sudo rm -fr ~/.Trash'
 alias u='id -un'
 alias ipcfg="ifconfig | grep 'inet ' | grep -Fv 127.0.0.1 | awk '{print $2}'"
 

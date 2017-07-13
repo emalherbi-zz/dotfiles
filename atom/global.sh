@@ -2,7 +2,7 @@
 
 source common/functions.sh
 
-print_start "Starting installation: Atom";
+print_start "Starting: Atom"
 
 # For linux install / update atom.
 # On mac ins't necessary, because is update automatic.
@@ -44,4 +44,4 @@ print_checking_install  "todo-show" "[ -d "$HOME/.atom/packages/todo-show/" ]" "
 
 print_checking_install  "tree-ignore" "[ -d "$HOME/.atom/packages/tree-ignore/" ]" "sudo apm install tree-ignore"
 
-print_finish "Finished Successfully: Atom";
+print_finish "Finished: Atom"

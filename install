@@ -22,17 +22,15 @@ fi
 
 bash brew/global.sh
 
-if [ "$OS" = "OSX" ]; then
-    print_install "cask" "bash cask/global.sh"
-fi
-
 bash ruby/global.sh
-
-bash aptitude/global.sh
 
 bash node/global.sh
 
 bash atom/global.sh
+
+if [ "$OS" = "OSX" ]; then
+    print_install "cask" "bash cask/global.sh"
+fi
 
 bash common/dotfiles.sh
 

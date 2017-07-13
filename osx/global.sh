@@ -2,8 +2,8 @@
 
 source common/functions.sh
 
-print_start "Starting installation: OSX";
+print_start "Starting: OSX"
 
 sudo softwareupdate -ia
 
-print_finish "Finished Successfully: OSX";
+print_finish "Finished: OSX"

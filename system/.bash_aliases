@@ -11,7 +11,7 @@ alias open='nautilus'
 alias rmrf='rm -rf'
 alias trash='rm -rf ~/.local/share/Trash/*'
 alias u='id -un'
-alias ipconfig="ifconfig"
+alias ipcfg="ifconfig"
 
 # finder
 # showfiles only mac

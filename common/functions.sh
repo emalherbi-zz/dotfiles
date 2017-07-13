@@ -5,11 +5,11 @@ function print {
 }
 
 function print_start {
-	echo -e "\033[1;37m=> $1\033[0m";
+	echo -e "\033[1;36m=> $1\033[0m";
 }
 
 function print_finish {
-	echo -e "\033[1;37m=> $1\033[0m";
+	echo -e "\033[1;36m=> $1\033[0m";
 }
 
 function print_alert {
@@ -25,9 +25,9 @@ function print_install {
         read -p "Do you wish to install $1? [Y/n] " yn;
         case $yn in
             [Yy]* )
-                print_start "Starting installation: $1";
+                print_start "Starting: $1";
                 $2;
-                print_checking "Successfully installed: $1";
+                print_checking "$1";
                 break;;
             [Nn]* )
                 print_alert "Canceled: $1";
@@ -45,9 +45,9 @@ function print_checking_install {
             read -p "Do you wish to install $1? [Y/n] " yn;
             case $yn in
                 [Yy]* )
-                    print_start "Starting installation: $1";
+                    print_start "Starting: $1";
                     $3;
-                    print_checking "Successfully installed: $1";
+                    print_checking "$1";
                     break;;
                 [Nn]* )
                     print_alert "Canceled: $1";

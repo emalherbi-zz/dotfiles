@@ -93,6 +93,7 @@ $ la           ~ ls -la
 $ rmrf         ~ rm -rf
 $ trash        ~ rm -fr ~/.Trash
 $ u            ~ id -un
+$ ipcfg        ~ ifconfig | grep 'inet ' | grep -Fv 127.0.0.1 | awk '{print $2}'
 $ showfiles    ~ defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder
 $ hidefiles    ~ defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder
 $ cleanup      ~ find . -type f -name '*.DS_Store' -ls -delete
@@ -118,6 +119,7 @@ $ open      ~ nautilus
 $ rmrf      ~ rm -rf
 $ trash     ~ rm -rf ~/.local/share/Trash/*
 $ u         ~ id -un
+$ ipcfg     ~ ifconfig
 $ wheater   ~ curl "http://wttr.in/Pato_Branco"
 ```
 

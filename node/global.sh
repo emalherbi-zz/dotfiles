@@ -2,7 +2,10 @@
 
 source common/functions.sh
 
-print_start "Starting installation: Node";
+print_start "Starting: Node"
+
+sudo npm i -g npm
+print_checking "npm update"
 
 print_checking_install "grunt-cli" "npm list -g grunt-cli" "sudo npm install -g grunt-cli"
 
@@ -22,4 +25,4 @@ print_checking_install "generator-play-ideia" "npm list -g generator-play-ideia"
 
 print_checking_install "generator-locawebstyle" "npm list -g generator-locawebstyle" "sudo npm install -g generator-locawebstyle"
 
-print_finish "Finished Successfully: Node";
+print_finish "Finished: Node"

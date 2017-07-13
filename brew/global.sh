@@ -2,7 +2,7 @@
 
 source common/functions.sh
 
-print_start "Starting installation: Brew";
+print_start "Starting: Brew"
 
 if [ "$OS" = "OSX" ]; then
     print_checking_install  "homebrew" "which brew" "/usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'"
@@ -10,7 +10,7 @@ else
     print_checking_install  "linuxbrew" "which brew" "sudo apt-get install -y build-essential curl file git python-setuptools ruby linuxbrew-wrapper"
 fi
 
-# Not Working With: brew ls --versions caskroom/cask
+# TODO: Not working with: brew ls --versions caskroom/cask
 if [ "$OS" = "OSX" ]; then
     print_install  "caskroom/cask" "brew tap caskroom/cask"
 fi
@@ -43,7 +43,7 @@ print_checking_install "wifi-password" "brew ls --versions wifi-password" "brew 
 
 # Config
 
-# Set Fish default shell
+# Set fish default shell
 if brew ls --versions fish &> /dev/null; then
     print_checking "fish default shell"
 else
@@ -66,4 +66,4 @@ print_checking "brew update all packages"
 brew cleanup
 print_checking "brew remove outdated versions from the cellar"
 
-print_finish "Finished Successfully: Brew";
+print_finish "Finished: Brew"

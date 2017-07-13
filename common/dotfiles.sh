@@ -2,7 +2,7 @@
 
 source common/functions.sh
 
-print_start "Starting installation: Dotfiles";
+print_start "Starting: Dotfiles"
 
 if [ "$OS" = "OSX" ]; then
     # .osx
@@ -63,4 +63,4 @@ fi
 # this file prevents the shell login message
 sudo touch ~/.hushlogin
 
-print_finish "Finished Successfully: Dotfiles";
+print_finish "Finished: Dotfiles"

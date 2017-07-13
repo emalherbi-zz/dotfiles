@@ -13,6 +13,7 @@
     chb = checkout -b
     co = commit -m
     df = diff
+    rs = reset --hard HEAD
     me = merge
     ps = push
     pl = pull

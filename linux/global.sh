@@ -21,4 +21,7 @@ print_checking_install  "meld" "which meld" "sudo apt-get install intltool itsto
 # rar
 print_checking_install  "rar" "which rar" "sudo apt-get install rar unrar"
 
+# python-pip
+print_checking_install  "python-pip" "which python-pip" "sudo apt install python-pip"
+
 print_finish "Finished: Linux"

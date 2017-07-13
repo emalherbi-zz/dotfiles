@@ -18,4 +18,7 @@ print_checking_install  "meld" "which meld" "sudo apt-get install meld"
 
 print_checking_install  "meld" "which meld" "sudo apt-get install intltool itstool gir1.2-gtksource-3.0 libxml2-utils"
 
+# rar
+print_checking_install  "rar" "which rar" "sudo apt-get install rar unrar"
+
 print_finish "Finished: Linux"

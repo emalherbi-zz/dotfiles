@@ -30,6 +30,7 @@ $ git chb ~ checkout -b
 $ git cl  ~ clone
 $ git co  ~ commit -m
 $ git df  ~ diff
+$ git rs  ~ reset --hard HEAD
 $ git me  ~ merge
 $ git pl  ~ pull
 $ git ps  ~ push
@@ -108,7 +109,7 @@ $ wheater      ~ curl "http://wttr.in/Pato_Branco"
 
 ```bash
 $ ..        ~ cd ..
-$ badblocks ~ sudo badblocks -sv -c 1024 /dev/sdaX
+$ badblocks ~ badblocks -sv -c 1024 /dev/sdaX
 $ c         ~ clear
 $ chr       ~ chmod -R 777
 $ gg        ~ sensible-browser "http://www.google.com"

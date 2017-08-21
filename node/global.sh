@@ -2,27 +2,27 @@
 
 source common/functions.sh
 
-print_start "Starting: Node"
+print "Starting: Node"
 
 sudo npm i -g npm
-print_checking "npm update"
+print_checked "npm update"
 
-print_checking_install "grunt-cli" "npm list -g grunt-cli" "sudo npm install -g grunt-cli"
+install_checked "grunt-cli" "npm list -g grunt-cli" "sudo npm install -g grunt-cli"
 
-print_checking_install "grunt-init" "npm list -g grunt-init" "sudo npm install -g grunt-init"
+install_checked "grunt-init" "npm list -g grunt-init" "sudo npm install -g grunt-init"
 
-print_checking_install "bower" "npm list -g bower" "sudo npm install -g bower"
+install_checked "bower" "npm list -g bower" "sudo npm install -g bower"
 
-print_checking_install "yo" "npm list -g yo" "sudo npm install -g yo"
+install_checked "yo" "npm list -g yo" "sudo npm install -g yo"
 
-print_checking_install "ionic" "npm list -g ionic" "sudo npm install -g cordova ionic"
+install_checked "ionic" "npm list -g ionic" "sudo npm install -g cordova ionic"
 
-print_checking_install "vtop" "npm list -g vtop" "sudo npm install -g vtop"
+install_checked "vtop" "npm list -g vtop" "sudo npm install -g vtop"
 
-print_checking_install "nativefier" "npm list -g nativefier" "sudo npm install -g nativefier"
+install_checked "nativefier" "npm list -g nativefier" "sudo npm install -g nativefier"
 
-print_checking_install "generator-play-ideia" "npm list -g generator-play-ideia" "sudo npm install -g generator-play-ideia"
+install_checked "generator-play-ideia" "npm list -g generator-play-ideia" "sudo npm install -g generator-play-ideia"
 
-print_checking_install "generator-locawebstyle" "npm list -g generator-locawebstyle" "sudo npm install -g generator-locawebstyle"
+install_checked "generator-locawebstyle" "npm list -g generator-locawebstyle" "sudo npm install -g generator-locawebstyle"
 
-print_finish "Finished: Node"
+print "Finished: Node"

@@ -1,33 +1,25 @@
 #!/bin/bash
 
 function print {
-	echo -e "\033[1;36m $1 \033[0m";
-}
-
-function print_start {
-	echo -e "\033[1;36m=> $1\033[0m";
-}
-
-function print_finish {
-	echo -e "\033[1;36m=> $1\033[0m";
+	echo -e "\033[1;36m=> $1 \033[0m";
 }
 
 function print_alert {
 	echo -e "\033[1;31m=> $1 ✖\033[0m";
 }
 
-function print_checking {
+function print_checked {
 	echo -e "\033[1;32m=> $1 ✔\033[0m";
 }
 
-function print_install {
+function install {
     while true; do
         read -p "Do you wish to install $1? [Y/n] " yn;
         case $yn in
             [Yy]* )
-                print_start "Starting: $1";
+                print "Starting: $1";
                 $2;
-                print_checking "$1";
+                print_checked "$1";
                 break;;
             [Nn]* )
                 print_alert "Canceled: $1";
@@ -37,17 +29,17 @@ function print_install {
     done
 }
 
-function print_checking_install {
+function install_checked {
     if $2 &> /dev/null; then
-        print_checking "$1"
+        print_checked "$1"
     else
         while true; do
             read -p "Do you wish to install $1? [Y/n] " yn;
             case $yn in
                 [Yy]* )
-                    print_start "Starting: $1";
+                    print "Starting: $1";
                     $3;
-                    print_checking "$1";
+                    print_checked "$1";
                     break;;
                 [Nn]* )
                     print_alert "Canceled: $1";

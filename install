@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source common/clear.sh
+
 source common/functions.sh
 
 # Create your here: http://patorjk.com/software/taag/#p=display&f=Graffiti&t=Type%20Something%20
@@ -18,6 +19,7 @@ if [ "$OS" = "OSX" ]; then
     bash osx/global.sh
 else
     bash linux/global.sh
+    bash linux/others.sh
 fi
 
 bash brew/global.sh
@@ -29,7 +31,7 @@ bash node/global.sh
 bash atom/global.sh
 
 if [ "$OS" = "OSX" ]; then
-    print_install "cask" "bash cask/global.sh"
+    install "cask" "bash cask/global.sh"
 fi
 
 bash common/dotfiles.sh

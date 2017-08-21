@@ -1,23 +1,22 @@
 # My dotfiles for Mac/Linux (Ubuntu)
 
-<!-- ## Installation Prerequisites
-#### [Atom](https://atom.io/) -->
-
-## Instalation
+# Instalation
 
 ```bash
 $ git clone https://github.com/emalherbi/dotfiles.git && cd dotfiles
 ```
 
-## How to run
+# How to run
 
-#### Mac/Linux
+## Mac/Linux
 
 ```bash
 $ bash install
 ```
 
-## Git Aliases
+# Aliases
+
+## Git
 
 ```bash
 $ git act ~ shortlog --numbered --summary --email --no-merges --since="6 months"
@@ -38,7 +37,7 @@ $ git st  ~ status -sb
 $ git up  ~ pull
 ```
 
-## Docker Aliases
+## Docker
 
 ```bash
 $ dcwww      ~ cd $HOME/Sites/docker
@@ -59,7 +58,7 @@ $ dcupdf     ~ sudo docker-compose up -d --force-recreate
 $ dcupall    ~ sudo docker-compose up -d db && sleep 5 && sudo docker-compose up -d phpmyadmin && sleep 5 && sudo docker-compose up -d php
 ```
 
-## SVN Aliases
+## SVN
 
 ```bash
 $ svnad ~ svn add * --force
@@ -68,20 +67,20 @@ $ svnst ~ sudo svn status
 $ svnup ~ svn update .
 ```
 
-## Projects Aliases
+## Projects
 
 ```bash
 $ sites ~ cd $HOME/Sites/
 $ www   ~ cd $HOME/Sites/docker/www/html
 ```
 
-## Php Aliases
+## Php
 
 ```bash
 $ composer ~ php /usr/local/bin/composer.phar (only mac)
 ```
 
-## Mac Aliases
+## Mac
 
 ```bash
 $ ..           ~ cd ..
@@ -105,7 +104,7 @@ $ tu           ~ top -o cpu
 $ wheater      ~ curl "http://wttr.in/Pato_Branco"
 ```
 
-## Linux Aliases
+## Linux
 
 ```bash
 $ ..        ~ cd ..
@@ -124,7 +123,7 @@ $ ipcfg     ~ ifconfig
 $ wheater   ~ curl "http://wttr.in/Pato_Branco"
 ```
 
-## Utils
+# Utils
 
 ```bash
 .osx ✔
@@ -137,7 +136,7 @@ $ wheater   ~ curl "http://wttr.in/Pato_Branco"
 .editorconfig ✔
 ```
 
-## Gems e etc
+# Gems e etc
 
 ```
 => homebrew ✔
@@ -150,6 +149,9 @@ $ wheater   ~ curl "http://wttr.in/Pato_Branco"
 |  => fish ✔
 |  => wifi-password ✔
 => cask ✔ (only mac)
+|  => java ✔
+|  => android-platform-tools ✔
+|  => android-sdk ✔
 |  => google-chrome ✔
 |  => google-chrome-canary ✔
 |  => torbrowser ✔
@@ -164,7 +166,6 @@ $ wheater   ~ curl "http://wttr.in/Pato_Branco"
 |  => iterm2 ✔
 |  => macvim ✔
 |  => atom ✔
-|  => android-platform-tools ✔
 => node ✔
 |  => grunt ✔
 |  => grunt-init ✔
@@ -175,11 +176,25 @@ $ wheater   ~ curl "http://wttr.in/Pato_Branco"
 |  => nativefier ✔
 |  => generator-play-ideia ✔
 |  => generator-locawebstyle ✔
+=> atom ✔
+|  => atom-beautify ✔
+|  => docblockr ✔
+|  => editorconfig ✔
+|  => emmet ✔
+|  => highlight-selected ✔
+|  => linter-csslint ✔
+|  => linter-htmlhint ✔
+|  => linter-jshint ✔
+|  => minimap ✔
+|  => minimap-highlight-selected ✔
+|  => open-recent ✔
+|  => todo-show ✔
+|  => tree-ignore ✔
 => ruby ✔
 |  => gem ✔
 |  => jekyll ✔
 ```
 
-## License
+# License
 
 Code is under [MIT](http://davidsonfellipe.mit-license.org) license and content is under [Creative Commons BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US)

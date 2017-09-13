@@ -8,21 +8,19 @@ $ git clone https://github.com/emalherbi/dotfiles.git && cd dotfiles
 
 # How to run
 
-# Mac / Linux
+## Mac / Linux
 
 ```bash
 $ bash install
 ```
 
-# Git Aliases
-
-[Git](https://github.com/emalherbi/dotfiles/blob/master/git/.gitconfig#L4)
-
 # Aliases
 
-[MAC](https://github.com/emalherbi/dotfiles/blob/master/system/.bash_profile)
+[Mac](https://github.com/emalherbi/dotfiles/blob/master/system/.bash_profile)
 
 [Linux](https://github.com/emalherbi/dotfiles/blob/master/system/.bash_aliases)
+
+[Git](https://github.com/emalherbi/dotfiles/blob/master/git/.gitconfig#L4)
 
 # Utils
 

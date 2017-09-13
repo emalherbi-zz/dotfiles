@@ -16,7 +16,6 @@ else
 fi
 
 # Cask
-# TODO: Not working: brew ls --versions caskroom/cask
 if [ "$OS" = "OSX" ]; then
     install  "caskroom/cask" "brew tap caskroom/cask"
 fi

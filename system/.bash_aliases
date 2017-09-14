@@ -59,3 +59,13 @@ alias svnad='sudo svn add * --force'
 alias svnco='sudo svn commit -m'
 alias svnst='sudo svn status'
 alias svnup='sudo svn update .'
+
+# set proxy
+function setproxy() {
+    sudo sh -c "echo 'Acquire::http::proxy \"http://192.168.1.1:3128/\";' >> /etc/apt/apt.conf"
+}
+
+# unset proxy
+function unsetproxy() {
+    sudo sh -c "sed -i '1d' /etc/apt/apt.conf"
+}

@@ -59,3 +59,6 @@ alias svnad='sudo svn add * --force'
 alias svnco='sudo svn commit -m'
 alias svnst='sudo svn status'
 alias svnup='sudo svn update .'
+
+# set proxy only linux
+# unset proxy only linux

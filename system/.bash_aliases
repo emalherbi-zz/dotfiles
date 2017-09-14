@@ -18,10 +18,6 @@ alias ipcfg='ifconfig'
 # hidefiles only mac
 # cleanup only mac
 
-# net
-# ips only mac
-# netlisteners only mac
-
 # processes
 # tm only mac
 # tu only mac
@@ -60,12 +56,15 @@ alias svnco='sudo svn commit -m'
 alias svnst='sudo svn status'
 alias svnup='sudo svn update .'
 
-# set proxy
+# net
+# ips only mac
+# netlisteners only mac
+alias netlist='nmcli c'
+alias netdown='nmcli c down'
+alias netup='nmcli c up'
 function setproxy() {
     sudo sh -c "echo 'Acquire::http::proxy \"http://192.168.1.1:3128/\";' >> /etc/apt/apt.conf"
 }
-
-# unset proxy
 function unsetproxy() {
     sudo sh -c "sed -i '1d' /etc/apt/apt.conf"
 }

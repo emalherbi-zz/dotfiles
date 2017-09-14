@@ -18,10 +18,6 @@ alias showfiles='defaults write com.apple.finder AppleShowAllFiles -bool true &&
 alias hidefiles='defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder'
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
-# net
-alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
-alias netlisteners='lsof -i -P | grep LISTEN'
-
 # processes
 alias tm='top -o vsize' # memory
 alias tu='top -o cpu' # cpu
@@ -60,5 +56,11 @@ alias svnco='sudo svn commit -m'
 alias svnst='sudo svn status'
 alias svnup='sudo svn update .'
 
-# set proxy only linux
-# unset proxy only linux
+# net
+alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
+alias netlisteners='lsof -i -P | grep LISTEN'
+# netlist only linux
+# netdown only linux
+# netup only linux
+# setproxy only linux
+# unsetproxy only linux

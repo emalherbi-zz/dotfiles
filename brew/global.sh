@@ -54,10 +54,8 @@ install_checked "fish" "brew ls --versions fish" "brew install fish"
 # Wifi Password
 install_checked "wifi-password" "brew ls --versions wifi-password" "brew install wifi-password"
 
-# if [ "$OS" = "OSX" ]; then
-#     install_checked "macvim" "brew ls --versions macvim" "brew install macvim --with-override-system-vim"
-# fi
-# brew install findutils
+# Findutils
+install_checked "findutils" "brew ls --versions findutils" "brew install findutils"
 
 # ############################################################################ #
 # ### Config

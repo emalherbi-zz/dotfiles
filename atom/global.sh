@@ -8,6 +8,13 @@ print "Starting: Atom"
 # ### Packages
 # ############################################################################ #
 
+if [ "$OS" != "OSX" ]; then
+    install_checked \
+        "atom-updater-linux" \
+        "[ -d "$HOME/.atom/packages/atom-updater-linux/" ]" \
+        "sudo apm install atom-updater-linux"
+fi
+
 install_checked \
     "atom-beautify" \
     "[ -d "$HOME/.atom/packages/atom-beautify/" ]" \

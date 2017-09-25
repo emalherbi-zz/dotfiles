@@ -2,6 +2,8 @@
 
 # Manual Installation
 
+- [Docker](https://docs.docker.com/engine/installation/#desktop)
+- [Docker Compose](https://docs.docker.com/compose/install/)
 - [Composer](https://getcomposer.org/download/)
 - [PhpUnit](https://phpunit.de/getting-started.html)
 

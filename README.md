@@ -1,5 +1,10 @@
 # My dotfiles for Mac/Linux (Ubuntu)
 
+# Manual Installation
+
+[Composer](https://getcomposer.org/download/)
+[PhpUnit](https://phpunit.de/getting-started.html)
+
 # Instalation
 
 ```bash

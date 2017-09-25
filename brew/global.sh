@@ -55,7 +55,9 @@ install_checked "fish" "brew ls --versions fish" "brew install fish"
 install_checked "wifi-password" "brew ls --versions wifi-password" "brew install wifi-password"
 
 # Findutils
-install_checked "findutils" "brew ls --versions findutils" "brew install findutils"
+if [ "$OS" = "OSX" ]; then
+    install_checked "findutils" "brew ls --versions findutils" "brew install findutils"
+fi
 
 # ############################################################################ #
 # ### Config

@@ -2,8 +2,8 @@
 
 # Manual Installation
 
-[Composer](https://getcomposer.org/download/)
-[PhpUnit](https://phpunit.de/getting-started.html)
+- [Composer](https://getcomposer.org/download/)
+- [PhpUnit](https://phpunit.de/getting-started.html)
 
 # Instalation
 

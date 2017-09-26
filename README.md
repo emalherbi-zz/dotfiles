@@ -2,6 +2,7 @@
 
 # Manual Installation
 
+- [Atom](https://atom.io/)
 - [Docker](https://docs.docker.com/engine/installation/#desktop)
 - [Docker Compose](https://docs.docker.com/compose/install/)
 - [Composer](https://getcomposer.org/download/)
@@ -27,34 +28,66 @@ $ bash install
 
 [Linux](https://github.com/emalherbi/dotfiles/blob/master/system/.bash_aliases)
 
-[Git](https://github.com/emalherbi/dotfiles/blob/master/git/.gitconfig#L4)
+[Git](https://github.com/emalherbi/dotfiles/blob/master/git/.gitconfig)
 
 # Utils
 
 ```bash
-.osx ✔
-.bash_profile ✔
-.bash_aliases ✔
-.inputrc ✔
-.gitconfig ✔
-.gitignore ✔
-.git-completion ✔
-.editorconfig ✔
+[.osx](https://github.com/emalherbi/dotfiles/blob/master/osx/.osx) ✔
+[.bash_profile](https://github.com/emalherbi/dotfiles/blob/master/system/.bash_profile) ✔
+[.bash_aliases](https://github.com/emalherbi/dotfiles/blob/master/system/.bash_aliases) ✔
+[.inputrc](https://github.com/emalherbi/dotfiles/blob/master/system/.inputrc) ✔
+[.gitconfig](https://github.com/emalherbi/dotfiles/blob/master/git/.gitconfig) ✔
+[.gitignore](https://github.com/emalherbi/dotfiles/blob/master/git/.gitignore) ✔
+[.git-completion](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash) ✔
+[.editorconfig](https://github.com/emalherbi/dotfiles/blob/master/atom/.editorconfig) ✔
 ```
 
 # Gems e etc
 
 ```
+=> linux ✔
+|  => aptitude ✔
+|  => xclip ✔
+|  => meld ✔
+|  => rar ✔
 => homebrew ✔
 |  => cask ✔
 |  => node ✔
 |  => svn ✔
 |  => ant ✔
-|  => gradle ✔
 |  => vim ✔
 |  => macvim ✔
 |  => fish ✔
 |  => wifi-password ✔
+|  => findutils ✔
+=> ruby ✔
+|  => gem ✔
+|  => jekyll ✔
+=> node ✔
+|  => grunt ✔
+|  => grunt-init ✔
+|  => bower ✔
+|  => yeoman ✔
+|  => ionic ✔
+|  => vtop ✔
+|  => nativefier ✔
+|  => generator-play-ideia ✔
+|  => generator-locawebstyle ✔
+=> atom ✔
+|  => atom-updater-linux ✔
+|  => atom-beautify ✔
+|  => docblockr ✔
+|  => editorconfig ✔
+|  => emmet ✔
+|  => highlight-selected ✔
+|  => linter-htmlhint ✔
+|  => linter-jshint ✔
+|  => minimap ✔
+|  => minimap-highlight-selected ✔
+|  => open-recent ✔
+|  => todo-show ✔
+|  => tree-ignore ✔
 => cask ✔ (only mac)
 |  => java ✔
 |  => android-platform-tools ✔
@@ -73,39 +106,6 @@ $ bash install
 |  => iterm2 ✔
 |  => macvim ✔
 |  => atom ✔
-=> node ✔
-|  => grunt ✔
-|  => grunt-init ✔
-|  => bower ✔
-|  => yeoman ✔
-|  => ionic ✔
-|  => vtop ✔
-|  => nativefier ✔
-|  => generator-play-ideia ✔
-|  => generator-locawebstyle ✔
-=> atom ✔
-|  => atom-beautify ✔
-|  => docblockr ✔
-|  => editorconfig ✔
-|  => emmet ✔
-|  => highlight-selected ✔
-|  => linter-csslint ✔
-|  => linter-htmlhint ✔
-|  => linter-jshint ✔
-|  => minimap ✔
-|  => minimap-highlight-selected ✔
-|  => open-recent ✔
-|  => todo-show ✔
-|  => tree-ignore ✔
-=> ruby ✔
-|  => gem ✔
-|  => jekyll ✔
-=> linux ✔
-|  => aptitude ✔
-|  => xclip ✔
-|  => meld ✔
-|  => rar ✔
-|  => python-pip ✔
 ```
 
 # License

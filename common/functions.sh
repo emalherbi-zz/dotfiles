@@ -57,5 +57,6 @@ else
 fi
 
 pwd=$(pwd)
+user=$(id -un)
 
 # END

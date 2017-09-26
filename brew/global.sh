@@ -37,9 +37,6 @@ fi
 # ANT
 install_checked "ant" "brew ls --versions ant" "brew install ant"
 
-# Gradle
-install_checked "gradle" "brew ls --versions gradle" "brew install gradle"
-
 # Vim
 install_checked "vim" "brew ls --versions vim" "brew install vim"
 
@@ -70,7 +67,7 @@ else
     if [ "$OS" = "OSX" ]; then
       chsh -s /usr/local/bin/fish
     else
-      chsh -s `which fish`
+      chsh -s /home/"$user"/.linuxbrew/bin/fish
     fi
 fi
 

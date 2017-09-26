@@ -41,11 +41,6 @@ install_checked \
     "sudo apm install highlight-selected"
 
 install_checked \
-    "linter-csslint" \
-    "[ -d "$HOME/.atom/packages/linter-csslint/" ]" \
-    "sudo apm install linter-csslint"
-
-install_checked \
     "linter-htmlhint" \
     "[ -d "$HOME/.atom/packages/linter-htmlhint/" ]" \
     "sudo apm install linter-htmlhint"

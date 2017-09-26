@@ -59,6 +59,10 @@ alias svnst='sudo svn status'
 alias svnup='sudo svn update .'
 alias svndd='$( sudo svn status | sed -e "/^!/!d" -e "s/^!//" )'
 
+# git
+alias gitchp='git diff --summary | grep --color "mode change 100755 => 100644" | cut -d" " -f7- | xargs -d"\n" chmod +x'
+alias gitchm='git diff --summary | grep --color "mode change 100644 => 100755" | cut -d" " -f7- | xargs -d"\n" chmod -x'
+
 # net
 # ips only mac
 # netlisteners only mac

@@ -59,6 +59,10 @@ alias svnst='sudo svn status'
 alias svnup='sudo svn update .'
 alias svndd='$( sudo svn status | sed -e "/^!/!d" -e "s/^!//" )'
 
+# git
+alias gitchp='git diff --summary | grep --color "mode change 100755 => 100644" | cut -d" " -f7- | gxargs -d"\n" chmod +x'
+alias gitchm='git diff --summary | grep --color "mode change 100644 => 100755" | cut -d" " -f7- | gxargs -d"\n" chmod -x'
+
 # net
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 alias netlisteners='lsof -i -P | grep LISTEN'

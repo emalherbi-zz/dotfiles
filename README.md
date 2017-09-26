@@ -33,12 +33,19 @@ $ bash install
 # Utils
 
 [.osx](https://github.com/emalherbi/dotfiles/blob/master/osx/.osx) ✔
+
 [.bash_profile](https://github.com/emalherbi/dotfiles/blob/master/system/.bash_profile) ✔
+
 [.bash_aliases](https://github.com/emalherbi/dotfiles/blob/master/system/.bash_aliases) ✔
+
 [.inputrc](https://github.com/emalherbi/dotfiles/blob/master/system/.inputrc) ✔
+
 [.gitconfig](https://github.com/emalherbi/dotfiles/blob/master/git/.gitconfig) ✔
+
 [.gitignore](https://github.com/emalherbi/dotfiles/blob/master/git/.gitignore) ✔
+
 [.git-completion](https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash) ✔
+
 [.editorconfig](https://github.com/emalherbi/dotfiles/blob/master/atom/.editorconfig) ✔
 
 # Gems e etc

@@ -57,7 +57,7 @@ alias svnad='sudo svn add * --force'
 alias svnco='sudo svn commit -m'
 alias svnst='sudo svn status'
 alias svnup='sudo svn update .'
-alias svnrm="$( svn status | sed -e '/^!/!d' -e 's/^!//' )"
+alias svndd='$( sudo svn status | sed -e "/^!/!d" -e "s/^!//" )'
 
 # net
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"

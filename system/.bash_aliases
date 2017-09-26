@@ -57,7 +57,7 @@ alias svnad='sudo svn add * --force'
 alias svnco='sudo svn commit -m'
 alias svnst='sudo svn status'
 alias svnup='sudo svn update .'
-alias svnrm="$( svn status | sed -e '/^!/!d' -e 's/^!//' )"
+alias svndd='$( sudo svn status | sed -e "/^!/!d" -e "s/^!//" )'
 
 # net
 # ips only mac

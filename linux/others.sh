@@ -17,4 +17,12 @@ install_checked  "meld" "which meld" "sudo apt-get install intltool itstool gir1
 # Rar
 install_checked  "rar" "which rar" "sudo apt-get install rar unrar"
 
+# Mail utils
+install_checked  "mailutils" "which mailutils" "sudo apt install mailutils"
+
+# Send email when pc start
+sudo cp $pwd/linux/email-send-pc-start.sh ~/email-send-pc-start.sh
+sudo chmod -R 777 ~/email-send-pc-start.sh
+print_checked "~/email-send-pc-start.sh"
+
 print "Finished: Linux Others"

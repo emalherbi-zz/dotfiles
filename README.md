@@ -22,6 +22,23 @@ $ git clone https://github.com/emalherbi/dotfiles.git && cd dotfiles
 $ bash install
 ```
 
+# Config
+
+After installation, you can configure the receiving of emails when you connect to the computer.
+
+1. Edit file "linux/email-send-pc-start.sh", and change the email.
+
+```bash
+echo "Hello. Your computer $PC - $OS was connected at $DT." | mail -s "[$PC - $OS] Access $DT" email@email.com
+```
+
+2. Run the command below:
+
+```bash
+crontab -e
+@reboot ~/email-send-pc-start.sh
+```
+
 # Aliases
 
 [Mac](https://github.com/emalherbi/dotfiles/blob/master/system/.bash_profile)

@@ -2,9 +2,11 @@
 
 source common/functions.sh
 
-install  "java" "brew cask install java"
-
-install  "android-platform-tools" "brew cask install android-platform-tools"
+if which atom &> /dev/null; then
+    print_checked "atom"
+else
+    brew cask install atom
+fi
 
 install  "android-sdk" "brew cask install android-sdk"
 
@@ -29,12 +31,6 @@ install  "transmission" "brew cask install transmission"
 install  "ukelele" "brew cask install ukelele"
 
 install  "virtualbox" "brew cask install virtualbox"
-
-install  "iterm2" "brew cask install iterm2"
-
-install  "macvim" "brew cask install macvim"
-
-install  "atom" "brew cask install atom"
 
 # Remove outdated versions from the cellar.
 brew cleanup

@@ -1,12 +1,24 @@
 # My dotfiles for Mac/Linux (Ubuntu)
 
-# Manual Installation
+# Manual Installation (Mac/Linux)
 
-- [Atom](https://atom.io/)
-- [Docker](https://docs.docker.com/engine/installation/#desktop)
-- [Docker Compose](https://docs.docker.com/compose/install/)
-- [Composer](https://getcomposer.org/download/)
-- [PhpUnit](https://phpunit.de/getting-started.html)
+- [git]()
+- [git desktop]()
+- [docker](https://docs.docker.com/engine/installation/#desktop)
+- [docker compose](https://docs.docker.com/compose/install/)
+- [php composer](https://getcomposer.org/download/)
+- [php unit](https://phpunit.de/getting-started.html)
+
+# Manual Installation (For Mac)
+
+- [xcode](https://developer.apple.com/xcode/)
+- [iterm2](https://www.iterm2.com/)
+
+# Manual Installation (For Linux)
+
+- [atom](https://atom.io/)
+- [java]()
+- [android studio]()
 
 # Instalation
 
@@ -80,7 +92,6 @@ crontab -e
 |  => ant ✔
 |  => vim ✔
 |  => macvim ✔
-|  => fish ✔
 |  => wifi-password ✔
 |  => findutils ✔
 => ruby ✔
@@ -112,7 +123,8 @@ crontab -e
 |  => tree-ignore ✔
 => cask ✔ (only mac)
 |  => java ✔
-|  => android-platform-tools ✔
+|  => macvim ✔
+|  => atom ✔
 |  => android-sdk ✔
 |  => google-chrome ✔
 |  => google-chrome-canary ✔
@@ -125,9 +137,6 @@ crontab -e
 |  => transmission ✔
 |  => ukelele ✔
 |  => virtualbox ✔
-|  => iterm2 ✔
-|  => macvim ✔
-|  => atom ✔
 ```
 
 # License

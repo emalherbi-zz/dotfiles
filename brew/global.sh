@@ -9,15 +9,28 @@ print "Starting: Brew"
 # ############################################################################ #
 
 # Brew
-if [ "$OS" = "OSX" ]; then
-    install_checked  "homebrew" "which brew" "/usr/bin/ruby -e '$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)'"
+if which brew &> /dev/null; then
+    print_checked "homebrew"
 else
-    install_checked  "linuxbrew" "which brew" "sudo apt-get install -y build-essential curl file git python-setuptools ruby linuxbrew-wrapper"
+    if [ "$OS" = "OSX" ]; then
+        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    else
+        sudo apt-get install -y build-essential curl file git python-setuptools ruby linuxbrew-wrapper
+    fi
 fi
 
 # Cask
 if [ "$OS" = "OSX" ]; then
-    install  "caskroom/cask" "brew tap caskroom/cask"
+    brew tap caskroom/cask
+fi
+
+# Java # Cask
+if [ "$OS" = "OSX" ]; then
+    if which java &> /dev/null; then
+        print_checked "java"
+    else
+        brew cask install java
+    fi
 fi
 
 # Node
@@ -45,8 +58,14 @@ if [ "$OS" = "OSX" ]; then
     install_checked "macvim" "brew ls --versions macvim" "brew install macvim --with-override-system-vim"
 fi
 
-# Fish
-install_checked "fish" "brew ls --versions fish" "brew install fish"
+# MacVim # Cask
+if [ "$OS" = "OSX" ]; then
+    if which macvim &> /dev/null; then
+        print_checked "macvim"
+    else
+        brew cask install macvim
+    fi
+fi
 
 # Wifi Password
 install_checked "wifi-password" "brew ls --versions wifi-password" "brew install wifi-password"
@@ -54,21 +73,6 @@ install_checked "wifi-password" "brew ls --versions wifi-password" "brew install
 # Findutils
 if [ "$OS" = "OSX" ]; then
     install_checked "findutils" "brew ls --versions findutils" "brew install findutils"
-fi
-
-# ############################################################################ #
-# ### Config
-# ############################################################################ #
-
-# Set fish default shell
-if brew ls --versions fish &> /dev/null; then
-    print_checked "fish default shell"
-else
-    if [ "$OS" = "OSX" ]; then
-      chsh -s /usr/local/bin/fish
-    else
-      chsh -s /home/"$user"/.linuxbrew/bin/fish
-    fi
 fi
 
 # ############################################################################ #

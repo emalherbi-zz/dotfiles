@@ -2,8 +2,8 @@
 
 # Manual Installation (Mac/Linux)
 
-- [git]()
-- [git desktop]()
+- [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [git desktop](https://desktop.github.com/)
 - [docker](https://docs.docker.com/engine/installation/#desktop)
 - [docker compose](https://docs.docker.com/compose/install/)
 - [php composer](https://getcomposer.org/download/)
@@ -17,8 +17,8 @@
 # Manual Installation (For Linux)
 
 - [atom](https://atom.io/)
-- [java]()
-- [android studio]()
+- [java](https://www.java.com/pt_BR/download/help/linux_x64_install.xml)
+- [android studio](https://developer.android.com/studio/install.html?hl=pt-br)
 
 # Instalation
 

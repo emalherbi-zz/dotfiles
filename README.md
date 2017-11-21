@@ -1,8 +1,8 @@
-# My dotfiles for Mac/Linux (Ubuntu)
+# My dotfiles for Mac / Linux (Ubuntu)
 
 # Manual Installation
 
-### Mac/Linux
+### Mac / Linux
 
 - [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [git desktop](https://desktop.github.com/)

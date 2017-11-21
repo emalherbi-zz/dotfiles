@@ -1,6 +1,6 @@
 # My dotfiles for Mac/Linux (Ubuntu)
 
-# Manual Installation (Mac/Linux)
+### Manual Installation (Mac/Linux)
 
 - [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 - [git desktop](https://desktop.github.com/)
@@ -9,12 +9,12 @@
 - [php composer](https://getcomposer.org/download/)
 - [php unit](https://phpunit.de/getting-started.html)
 
-# Manual Installation (For Mac)
+### Manual Installation (For Mac)
 
 - [xcode](https://developer.apple.com/xcode/)
 - [iterm2](https://www.iterm2.com/)
 
-# Manual Installation (For Linux)
+### Manual Installation (For Linux)
 
 - [atom](https://atom.io/)
 - [java](https://www.java.com/pt_BR/download/help/linux_x64_install.xml)
@@ -28,13 +28,13 @@ $ git clone https://github.com/emalherbi/dotfiles.git && cd dotfiles
 
 # How to run
 
-## Mac / Linux
+### Mac / Linux
 
 ```bash
 $ bash install
 ```
 
-# Config
+### Config
 
 After installation, you can configure the receiving of emails when you connect to the computer.
 

@@ -10,6 +10,8 @@ fi
 
 install  "android-sdk" "brew cask install android-sdk"
 
+install  "dbeaver" "brew cask install dbeaver-communit"
+
 install  "google-chrome" "brew cask install google-chrome"
 
 install  "google-chrome-canary" "brew cask install google-chrome-canary"

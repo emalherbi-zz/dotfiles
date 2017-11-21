@@ -18,9 +18,10 @@
 
 ### Linux
 
-- [atom](https://atom.io/)
 - [java](https://www.java.com/pt_BR/download/help/linux_x64_install.xml)
 - [android studio](https://developer.android.com/studio/install.html?hl=pt-br)
+- [atom](https://atom.io/)
+- [dbeaver](https://dbeaver.jkiss.org/)
 
 # Instalation
 
@@ -128,6 +129,7 @@ crontab -e
 |  => macvim ✔
 |  => atom ✔
 |  => android-sdk ✔
+|  => dbeaver ✔
 |  => google-chrome ✔
 |  => google-chrome-canary ✔
 |  => torbrowser ✔

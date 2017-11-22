@@ -10,6 +10,7 @@
 - [docker compose](https://docs.docker.com/compose/install/)
 - [php composer](https://getcomposer.org/download/)
 - [php unit](https://phpunit.de/getting-started.html)
+- [php cs fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
 
 ### Mac
 

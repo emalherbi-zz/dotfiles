@@ -70,6 +70,9 @@ fi
 # Wifi Password
 install_checked "wifi-password" "brew ls --versions wifi-password" "brew install wifi-password"
 
+# 7zip
+install_checked "7zip" "brew ls --versions p7zip" "brew install p7zip"
+
 # Findutils
 if [ "$OS" = "OSX" ]; then
     install_checked "findutils" "brew ls --versions findutils" "brew install findutils"

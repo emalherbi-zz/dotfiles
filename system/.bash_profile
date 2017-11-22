@@ -63,6 +63,9 @@ alias svndd="svn st | grep '^!' | awk '{print $2}' | xargs svn delete --force"
 alias gitchp='git diff --summary | grep --color "mode change 100755 => 100644" | cut -d" " -f7- | gxargs -d"\n" chmod +x'
 alias gitchm='git diff --summary | grep --color "mode change 100644 => 100755" | cut -d" " -f7- | gxargs -d"\n" chmod -x'
 
+# npm
+alias npmuppkg='npm update --save-dev'
+
 # net
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 alias netlisteners='lsof -i -P | grep LISTEN'

@@ -63,6 +63,9 @@ alias svndd="svn st | grep '^!' | awk '{print $2}' | xargs svn delete --force"
 alias gitchp='git diff --summary | grep --color "mode change 100755 => 100644" | cut -d" " -f7- | xargs -d"\n" chmod +x'
 alias gitchm='git diff --summary | grep --color "mode change 100644 => 100755" | cut -d" " -f7- | xargs -d"\n" chmod -x'
 
+# npm
+alias npmuppkg='npm update --save-dev'
+
 # net
 # ips only mac
 # netlisteners only mac

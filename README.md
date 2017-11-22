@@ -4,25 +4,25 @@
 
 ### Mac / Linux
 
-- [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [git desktop](https://desktop.github.com/)
+- [android studio](https://developer.android.com/studio/install.html?hl=pt-br)
 - [docker](https://docs.docker.com/engine/installation/#desktop)
 - [docker compose](https://docs.docker.com/compose/install/)
+- [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+- [git desktop](https://desktop.github.com/)
+- [php cs fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
 - [php composer](https://getcomposer.org/download/)
 - [php unit](https://phpunit.de/getting-started.html)
-- [php cs fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
 
 ### Mac
 
-- [xcode](https://developer.apple.com/xcode/)
 - [iterm2](https://www.iterm2.com/)
+- [xcode](https://developer.apple.com/xcode/)
 
 ### Linux
 
-- [java](https://www.java.com/pt_BR/download/help/linux_x64_install.xml)
-- [android studio](https://developer.android.com/studio/install.html?hl=pt-br)
 - [atom](https://atom.io/)
 - [dbeaver](https://dbeaver.jkiss.org/)
+- [java](https://www.java.com/pt_BR/download/help/linux_x64_install.xml)
 
 # Instalation
 
@@ -129,7 +129,6 @@ crontab -e
 |  => java ✔
 |  => macvim ✔
 |  => atom ✔
-|  => android-sdk ✔
 |  => dbeaver ✔
 |  => google-chrome ✔
 |  => google-chrome-canary ✔

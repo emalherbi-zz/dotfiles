@@ -8,8 +8,6 @@ else
     brew cask install atom
 fi
 
-install  "android-sdk" "brew cask install android-sdk"
-
 install  "dbeaver" "brew cask install dbeaver-communit"
 
 install  "google-chrome" "brew cask install google-chrome"

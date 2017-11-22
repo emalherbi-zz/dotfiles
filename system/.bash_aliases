@@ -69,9 +69,3 @@ alias gitchm='git diff --summary | grep --color "mode change 100644 => 100755" |
 alias netlist='nmcli c'
 alias netdown='nmcli c down'
 alias netup='nmcli c up'
-function setproxy() {
-    sudo sh -c "echo 'Acquire::http::proxy \"http://192.168.1.1:3128/\";' >> /etc/apt/apt.conf"
-}
-function unsetproxy() {
-    sudo sh -c "sed -i '1d' /etc/apt/apt.conf"
-}

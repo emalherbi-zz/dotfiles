@@ -69,5 +69,3 @@ alias netlisteners='lsof -i -P | grep LISTEN'
 # netlist only linux
 # netdown only linux
 # netup only linux
-# setproxy only linux
-# unsetproxy only linux

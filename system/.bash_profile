@@ -30,6 +30,7 @@ alias weather='curl "http://wttr.in/Pato_Branco"'
 # projects
 alias sites='cd $HOME/Sites/'
 alias www='cd $HOME/Sites/docker/www/html'
+alias dotfiles='cd $HOME/Sites/dotfiles'
 
 # php
 alias composer='php /usr/local/bin/composer.phar'

@@ -30,6 +30,7 @@ alias wheater='curl "http://wttr.in/Pato_Branco"'
 # projects
 alias sites='cd $HOME/Sites/'
 alias www='cd $HOME/Sites/docker/www/html'
+alias dotfiles='cd $HOME/Sites/dotfiles'
 
 # php
 # composer only mac
@@ -72,3 +73,7 @@ alias npmuppkg='npm update --save-dev'
 alias netlist='nmcli c'
 alias netdown='nmcli c down'
 alias netup='nmcli c up'
+
+export ANDROID_HOME=${HOME}/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export JAVA_HOME='/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java'

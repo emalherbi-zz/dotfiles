@@ -40,6 +40,8 @@ $ bash install
 
 ### Config
 
+##### Linux
+
 After installation, you can configure the receiving of emails when you connect to the computer.
 
 1. Edit file "linux/email-send-pc-start.sh", and change the email.
@@ -53,6 +55,28 @@ echo "Hello. Your computer $PC - $OS was connected at $DT." | mail -s "[$PC - $O
 ```bash
 crontab -e
 @reboot ~/email-send-pc-start.sh
+```
+
+Configure "ANDROID_HOME" and "JAVA_HOME" if necessary.
+
+1. Edit file "system/.bash_aliases".
+
+```bash
+export ANDROID_HOME=${HOME}/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export JAVA_HOME='/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java'
+```
+
+##### MAC
+
+Configure "ANDROID_HOME" and "JAVA_HOME" if necessary.
+
+1. Edit file "system/.bash_profile".
+
+```bash
+export ANDROID_HOME=${HOME}/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home'
 ```
 
 # Aliases

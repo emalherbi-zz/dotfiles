@@ -25,7 +25,7 @@ fi
 bash brew/global.sh
 
 if [ "$OS" = "OSX" ]; then
-    bash cask/global.sh
+    install  "cask programs" "bash cask/global.sh"
 fi
 
 bash ruby/global.sh
@@ -35,10 +35,3 @@ bash node/global.sh
 bash atom/global.sh
 
 bash common/dotfiles.sh
-
-# TODO
-# 1>/dev/null 2>&1
-#
-# installar sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-# sudo vim ~/.zshrc
-# plugins=(git npm bower brew osx extract z history-substring-search)

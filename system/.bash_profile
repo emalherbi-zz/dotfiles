@@ -66,7 +66,9 @@ alias gitchp='git diff --summary | grep --color "mode change 100755 => 100644" |
 alias gitchm='git diff --summary | grep --color "mode change 100644 => 100755" | cut -d" " -f7- | gxargs -d"\n" chmod -x'
 
 # npm
-alias npmuppkg='npm update --save-dev'
+alias npmup='rm -rf node_modules && rm -rf package-lock.json && npm update --save/--save-dev -f'
+alias npmgout='npm outdated -g --depth=0 .'
+alias npmgup='npm update -g .'
 
 # net
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"

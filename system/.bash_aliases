@@ -66,7 +66,9 @@ alias gitchp='git diff --summary | grep --color "mode change 100755 => 100644" |
 alias gitchm='git diff --summary | grep --color "mode change 100644 => 100755" | cut -d" " -f7- | xargs -d"\n" chmod -x'
 
 # npm
-alias npmuppkg='npm update --save-dev'
+alias npmup='rm -rf node_modules && rm -rf package-lock.json && npm update --save/--save-dev -f'
+alias npmgout='npm outdated -g --depth=0 .'
+alias npmgup='npm update -g .'
 
 # net
 # ips only mac

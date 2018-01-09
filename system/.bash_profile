@@ -5,6 +5,7 @@ alias ..='cd ..'
 # badblocks only linux
 alias c='clear'
 alias chr='sudo chmod -R 777'
+alias chw="sudo chown -R $user:"
 alias gg='open "http://www.google.com"'
 alias home='cd ~'
 alias l='ls -a'

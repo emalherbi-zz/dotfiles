@@ -5,6 +5,7 @@ alias ..='cd ..'
 alias badblocks='badblocks -sv -c 1024'
 alias c='clear'
 alias chr='sudo chmod -R 777'
+alias chw="sudo chown -R $user:"
 alias gg='sensible-browser "http://www.google.com"'
 alias home='cd ~'
 alias l='ls -a'

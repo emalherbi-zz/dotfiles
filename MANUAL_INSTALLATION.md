@@ -22,9 +22,9 @@
 - [DBeaver](https://dbeaver.jkiss.org/)
 - [Java](https://www.java.com/pt_BR/download/help/linux_x64_install.xml)
 
-# Cask (only mac)
+## Cask (only mac)
 
-## How to run
+### How to run
 
 ```bash
 $ bash install_cask

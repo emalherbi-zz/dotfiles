@@ -1,10 +1,10 @@
 # My dotfiles for Mac / Linux (Ubuntu)
 
-# Manual Installation
+## Manual Installation
 
 - [MANUAL_INSTALLATION](./MANUAL_INSTALLATION.md)
 
-# Instalation
+## Instalation
 
 ```bash
 $ git clone https://github.com/emalherbi/dotfiles.git && cd dotfiles
@@ -18,9 +18,9 @@ $ git clone https://github.com/emalherbi/dotfiles.git && cd dotfiles
 $ bash install
 ```
 
-### Config
+## Config
 
-##### Linux
+### Linux
 
 After installation, you can configure the receiving of emails when you connect to the computer.
 
@@ -47,7 +47,7 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export JAVA_HOME='/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java'
 ```
 
-##### MAC
+### MAC
 
 Configure "ANDROID_HOME" and "JAVA_HOME" if necessary.
 
@@ -59,7 +59,7 @@ export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home'
 ```
 
-# Aliases
+## Aliases
 
 [Mac](https://github.com/emalherbi/dotfiles/blob/master/system/.bash_profile)
 
@@ -67,7 +67,7 @@ export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Ho
 
 [Git](https://github.com/emalherbi/dotfiles/blob/master/git/.gitconfig)
 
-# Utils
+## Utils
 
 [.osx](https://github.com/emalherbi/dotfiles/blob/master/osx/.osx) ✔
 
@@ -85,7 +85,7 @@ export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Ho
 
 [.editorconfig](https://github.com/emalherbi/dotfiles/blob/master/atom/.editorconfig) ✔
 
-# Gems e etc
+## Gems e etc
 
 ```
 => linux ✔
@@ -131,6 +131,6 @@ export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Ho
 |  => tree-ignore ✔
 ```
 
-# License
+## License
 
 Code is under [MIT](http://davidsonfellipe.mit-license.org) license and content is under [Creative Commons BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US)

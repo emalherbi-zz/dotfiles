@@ -2,27 +2,7 @@
 
 # Manual Installation
 
-### Mac / Linux
-
-- [android studio](https://developer.android.com/studio/install.html?hl=pt-br)
-- [docker](https://docs.docker.com/engine/installation/#desktop)
-- [docker compose](https://docs.docker.com/compose/install/)
-- [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-- [git desktop](https://desktop.github.com/)
-- [php cs fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
-- [php composer](https://getcomposer.org/download/)
-- [php unit](https://phpunit.de/getting-started.html)
-
-### Mac
-
-- [iterm2](https://www.iterm2.com/)
-- [xcode](https://developer.apple.com/xcode/)
-
-### Linux
-
-- [atom](https://atom.io/)
-- [dbeaver](https://dbeaver.jkiss.org/)
-- [java](https://www.java.com/pt_BR/download/help/linux_x64_install.xml)
+- [MANUAL_INSTALLATION](./MANUAL_INSTALLATION.md)
 
 # Instalation
 
@@ -30,7 +10,7 @@
 $ git clone https://github.com/emalherbi/dotfiles.git && cd dotfiles
 ```
 
-# How to run
+## How to run
 
 ### Mac / Linux
 
@@ -149,22 +129,6 @@ export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Ho
 |  => open-recent ✔
 |  => todo-show ✔
 |  => tree-ignore ✔
-=> cask ✔ (only mac)
-|  => java ✔
-|  => macvim ✔
-|  => atom ✔
-|  => dbeaver ✔
-|  => google-chrome ✔
-|  => google-chrome-canary ✔
-|  => torbrowser ✔
-|  => imagealpha ✔
-|  => imageoptim ✔
-|  => vlc ✔
-|  => miro-video-converter ✔
-|  => the-unarchiver ✔
-|  => transmission ✔
-|  => ukelele ✔
-|  => virtualbox ✔
 ```
 
 # License

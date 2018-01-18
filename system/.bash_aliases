@@ -72,7 +72,7 @@ alias npmgout='npm outdated -g --depth=0 .'
 alias npmgup='npm update -g .'
 
 # android
-alias android='/usr/local/android-studio/bin/studio.sh'
+alias androidopen='/usr/local/android-studio/bin/studio.sh'
 
 # net
 # ips only mac

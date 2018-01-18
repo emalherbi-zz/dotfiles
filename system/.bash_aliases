@@ -71,6 +71,9 @@ alias npmup='rm -rf node_modules && rm -rf package-lock.json && npm update --sav
 alias npmgout='npm outdated -g --depth=0 .'
 alias npmgup='npm update -g .'
 
+# android
+alias android='/usr/local/android-studio/bin/studio.sh'
+
 # net
 # ips only mac
 # netlisteners only mac

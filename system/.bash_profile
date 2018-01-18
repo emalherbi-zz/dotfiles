@@ -71,6 +71,9 @@ alias npmup='rm -rf node_modules && rm -rf package-lock.json && npm update --sav
 alias npmgout='npm outdated -g --depth=0 .'
 alias npmgup='npm update -g .'
 
+# android
+# android only linux
+
 # net
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 alias netlisteners='lsof -i -P | grep LISTEN'

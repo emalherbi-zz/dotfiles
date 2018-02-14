@@ -83,3 +83,4 @@ alias netlisteners='lsof -i -P | grep LISTEN'
 export ANDROID_HOME=${HOME}/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home'
+export SVN_EDITOR=vi

@@ -83,3 +83,4 @@ alias netup='nmcli c up'
 export ANDROID_HOME=${HOME}/Android/Sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export JAVA_HOME='/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java'
+export SVN_EDITOR=vi

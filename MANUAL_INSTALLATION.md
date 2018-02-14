@@ -32,19 +32,10 @@ $ bash install_cask
 
 ```
 => cask ✔
-|  => java ✔
-|  => macvim ✔
-|  => atom ✔
 |  => dbeaver ✔
 |  => google-chrome ✔
-|  => google-chrome-canary ✔
-|  => torbrowser ✔
-|  => imagealpha ✔
-|  => imageoptim ✔
 |  => vlc ✔
-|  => miro-video-converter ✔
 |  => the-unarchiver ✔
 |  => transmission ✔
-|  => ukelele ✔
 |  => virtualbox ✔
 ```

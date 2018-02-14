@@ -54,12 +54,6 @@ if [ -f ".git-completion.bash" ]; then
     print_checked "~/.git-completion.bash"
 fi
 
-# .editorconfig
-if [ -f "atom/.editorconfig" ]; then
-    sudo ln -sf $pwd/atom/.editorconfig ~/.editorconfig
-    print_checked "~/.editorconfig"
-fi
-
 # this file prevents the shell login message
 sudo touch ~/.hushlogin
 

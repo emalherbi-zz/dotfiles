@@ -24,14 +24,8 @@ fi
 
 bash brew/global.sh
 
-if [ "$OS" = "OSX" ]; then
-    install  "cask programs" "bash cask/global.sh"
-fi
-
 bash ruby/global.sh
 
 bash node/global.sh
-
-bash atom/global.sh
 
 bash common/dotfiles.sh

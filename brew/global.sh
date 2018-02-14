@@ -24,7 +24,8 @@ if [ "$OS" = "OSX" ]; then
     brew tap caskroom/cask
 fi
 
-# Java # Cask
+# Java
+# Cask
 if [ "$OS" = "OSX" ]; then
     if which java &> /dev/null; then
         print_checked "java"
@@ -58,7 +59,8 @@ if [ "$OS" = "OSX" ]; then
     install_checked "macvim" "brew ls --versions macvim" "brew install macvim --with-override-system-vim"
 fi
 
-# MacVim # Cask
+# MacVim
+# Cask
 if [ "$OS" = "OSX" ]; then
     if which macvim &> /dev/null; then
         print_checked "macvim"

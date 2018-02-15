@@ -4,7 +4,7 @@
 
 Some programs require that the installation be done manually. Please perform this process before continuing.
 
-- [MANUAL_INSTALLATION](./MANUAL_INSTALLATION.md)
+- [MANUAL_INSTALLATION](./README_MANUAL.md)
 
 ## Instalation
 

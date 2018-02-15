@@ -60,6 +60,7 @@ alias svnad='sudo svn add * --force'
 alias svnco='sudo svn commit -m'
 alias svnst='sudo svn status'
 alias svnup='sudo svn update .'
+alias svnignore='svn propedit svn:ignore .'
 
 # git
 alias gitchp='git diff --summary | grep --color "mode change 100755 => 100644" | cut -d" " -f7- | gxargs -d"\n" chmod +x'

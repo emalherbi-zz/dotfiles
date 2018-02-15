@@ -80,6 +80,9 @@ if [ "$OS" = "OSX" ]; then
     install_checked "findutils" "brew ls --versions findutils" "brew install findutils"
 fi
 
+# Yarn
+install_checked "yarn" "brew ls --versions yarn" "brew install yarn"
+
 # ############################################################################ #
 # ### Update
 # ############################################################################ #

@@ -10,6 +10,7 @@
 - [PHP Composer](https://getcomposer.org/download/)
 - [PHP CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
 - [PHP Unit](https://phpunit.de/getting-started.html)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Mac
 
@@ -18,7 +19,6 @@
 
 ## Linux
 
-- [Atom](https://atom.io/)
 - [DBeaver](https://dbeaver.jkiss.org/)
 - [Java](https://www.java.com/pt_BR/download/help/linux_x64_install.xml)
 
@@ -27,6 +27,7 @@
 ### How to run
 
 ```bash
+$ brew tap caskroom/cask
 $ bash install_cask
 ```
 

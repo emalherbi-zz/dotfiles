@@ -52,10 +52,10 @@ fi
 install_checked "ant" "brew ls --versions ant" "brew install ant"
 
 # Vim
-install_checked "vim" "brew ls --versions vim" "brew install vim"
-
-# MacVim
 if [ "$OS" = "OSX" ]; then
+    install_checked "vim" "brew ls --versions vim" "brew install vim"
+    
+    # MacVim
     install_checked "macvim" "brew ls --versions macvim" "brew install macvim --with-override-system-vim"
 fi
 

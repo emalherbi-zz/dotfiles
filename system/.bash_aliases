@@ -16,8 +16,11 @@ alias rmrf='sudo rm -rf'
 alias trash='sudo rm -rf ~/.local/share/Trash/*'
 alias u='id -un'
 alias ipcfg='ifconfig'
+
+# install
 alias installdpkg='sudo dpkg -i'
 alias installbroken='sudo apt --fix-broken install'
+alias installexfat='sudo apt-get install exfat-fuse exfat-utils'
 
 # finder
 # showfiles only mac

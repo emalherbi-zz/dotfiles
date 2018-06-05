@@ -16,6 +16,8 @@ alias rmrf='sudo rm -rf'
 alias trash='sudo rm -fr ~/.Trash'
 alias u='id -un'
 alias ipcfg="ifconfig | grep 'inet ' | grep -Fv 127.0.0.1 | awk '{print $2}'"
+# installdpkg only linux
+# installbroken only linux
 
 # finder
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'

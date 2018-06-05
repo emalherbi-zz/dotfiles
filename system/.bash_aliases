@@ -16,6 +16,8 @@ alias rmrf='sudo rm -rf'
 alias trash='sudo rm -rf ~/.local/share/Trash/*'
 alias u='id -un'
 alias ipcfg='ifconfig'
+alias installdpkg='sudo dpkg -i'
+alias installbroken='sudo apt --fix-broken install'
 
 # finder
 # showfiles only mac

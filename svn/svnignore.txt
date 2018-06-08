@@ -1,0 +1,7 @@
+.tmp
+.vscode
+node_modules
+output
+platforms
+plugins
+package-lock.json

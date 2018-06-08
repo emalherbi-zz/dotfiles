@@ -29,6 +29,9 @@ else
     fi
 fi
 
+# svn
+sudo cp $pwd/svn/svnignore.txt ~/
+
 # .inputrc
 if [ -f "system/.inputrc" ]; then
     sudo ln -sf $pwd/system/.inputrc ~/.inputrc

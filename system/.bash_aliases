@@ -5,7 +5,7 @@ alias ..='cd ..'
 alias badblocks='badblocks -sv -c 1024'
 alias c='clear'
 alias chr='sudo chmod -R 777'
-alias chw="sudo chown -R $user:"
+alias chw="sudo chown -R $(id -un):"
 alias gg='sensible-browser "http://www.google.com"'
 alias home='cd ~'
 alias l='ls -a'
@@ -65,7 +65,8 @@ alias svnad='sudo svn add * --force'
 alias svnco='sudo svn commit -m'
 alias svnst='sudo svn status'
 alias svnup='sudo svn update .'
-alias svnignore='svn propedit svn:ignore .'
+alias svnignorecopy="sudo cp ~/svnignore.txt ."
+alias svnignore="sudo svn propset svn:ignore -F svnignore.txt ."
 
 # git
 alias gitchp='git diff --summary | grep --color "mode change 100755 => 100644" | cut -d" " -f7- | xargs -d"\n" chmod +x'

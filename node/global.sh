@@ -7,6 +7,8 @@ print "Starting: Node"
 sudo npm i -g npm
 print_checked "npm update"
 
+install_checked "npm-check" "npm list -g npm-check" "sudo npm install -g npm-check"
+
 install_checked "grunt-cli" "npm list -g grunt-cli" "sudo npm install -g grunt-cli"
 
 install_checked "grunt-init" "npm list -g grunt-init" "sudo npm install -g grunt-init"

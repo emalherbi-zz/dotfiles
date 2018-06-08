@@ -27,4 +27,6 @@ install_checked "generator-play-ideia" "npm list -g generator-play-ideia" "sudo 
 
 install_checked "generator-locawebstyle" "npm list -g generator-locawebstyle" "sudo npm install -g generator-locawebstyle"
 
+install_checked "speed-test" "npm list -g speed-test" "sudo npm install -g speed-test"
+
 print "Finished: Node"

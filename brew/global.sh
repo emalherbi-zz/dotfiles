@@ -25,13 +25,8 @@ if [ "$OS" = "OSX" ]; then
 fi
 
 # Java
-# Cask
 if [ "$OS" = "OSX" ]; then
-    if which java &> /dev/null; then
-        print_checked "java"
-    else
-        brew cask install java
-    fi
+    install_checked "java" "which java" "brew cask install java"
 fi
 
 # Node
@@ -54,19 +49,7 @@ install_checked "ant" "brew ls --versions ant" "brew install ant"
 # Vim
 if [ "$OS" = "OSX" ]; then
     install_checked "vim" "brew ls --versions vim" "brew install vim"
-    
-    # MacVim
     install_checked "macvim" "brew ls --versions macvim" "brew install macvim --with-override-system-vim"
-fi
-
-# MacVim
-# Cask
-if [ "$OS" = "OSX" ]; then
-    if which macvim &> /dev/null; then
-        print_checked "macvim"
-    else
-        brew cask install macvim
-    fi
 fi
 
 # Wifi Password

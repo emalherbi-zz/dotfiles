@@ -44,6 +44,7 @@ alias composer='php /usr/local/bin/composer.phar'
 
 # docker
 alias dcwww='cd $HOME/Sites/docker'
+alias dcwww7='cd $HOME/Sites/docker7'
 alias dcimg='sudo docker images'
 alias dcps='sudo docker ps'
 alias dcpsaq='sudo docker ps -a -q'
@@ -58,6 +59,7 @@ alias dcstartall='sudo docker start $(sudo docker ps -a -q)'
 alias dcup='sudo docker-compose up'
 alias dcupd='sudo docker-compose up -d'
 alias dcupdf='sudo docker-compose up -d --force-recreate'
+alias dcupdbf='sudo docker-compose up -d --build --force-recreate'
 alias dcupall='sudo docker-compose up -d db && sleep 5 && sudo docker-compose up -d phpmyadmin && sleep 5 && sudo docker-compose up -d php'
 
 # svn

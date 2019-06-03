@@ -14,13 +14,9 @@ print '$$ |  $$ |$$ |  $$ |   $$ |   $$$$$/      $$ |  $$ |      $$$$$/     $$$$
 print '$$ |__$$ |$$ \__$$ |   $$ |   $$ |       _$$ |_ $$ |_____ $$ |_____ /  \__$$ |'
 print '$$    $$/ $$    $$/    $$ |   $$ |      / $$   |$$       |$$       |$$    $$/ '
 print '$$$$$$$/   $$$$$$/     $$/    $$/       $$$$$$/ $$$$$$$$/ $$$$$$$$/  $$$$$$/  '
+print ''
 
-if [ "$OS" = "OSX" ]; then
-    bash osx/global.sh
-else
-    bash linux/global.sh
-    bash linux/others.sh
-fi
+bash osx/global.sh
 
 bash brew/global.sh
 
@@ -28,4 +24,4 @@ bash ruby/global.sh
 
 bash node/global.sh
 
-bash common/dotfiles.sh
+bash osx/dotfiles.sh

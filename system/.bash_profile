@@ -11,16 +11,10 @@ alias home='cd ~'
 alias l='ls -a'
 alias ll='ls -l'
 alias lll='ls -la'
-# open is native mac, only linux
 alias rmrf='sudo rm -rf'
 alias trash='sudo rm -fr ~/.Trash'
 alias u='id -un'
 alias ipcfg="ifconfig | grep 'inet ' | grep -Fv 127.0.0.1 | awk '{print $2}'"
-
-# install
-# installdpkg only linux
-# installbroken only linux
-# installexfat only linux
 
 # finder
 alias showfiles='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'
@@ -79,17 +73,11 @@ alias npmup='rm -rf node_modules && rm -rf package-lock.json && npm update --sav
 alias npmgout='npm outdated -g --depth=0 .'
 alias npmgup='npm update -g .'
 
-# android
-# androidopen only linux
-
 # net
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 alias netlisteners='lsof -i -P | grep LISTEN'
-# netlist only linux
-# netdown only linux
-# netup only linux
 
-export ANDROID_HOME=${HOME}/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home'
-export SVN_EDITOR=vi
+# export ANDROID_HOME=${HOME}/Library/Android/sdk
+# export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+# export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home'
+# export SVN_EDITOR=vi

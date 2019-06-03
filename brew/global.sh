@@ -12,45 +12,70 @@ print "Starting: Brew"
 if which brew &> /dev/null; then
     print_checked "homebrew"
 else
-    if [ "$OS" = "OSX" ]; then
-        /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-    else
-        sudo apt-get install -y build-essential curl file git python-setuptools ruby linuxbrew-wrapper
-    fi
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
+
+# ############################################################################ #
+# ### Cask Install
+# ############################################################################ #
 
 # Cask
-if [ "$OS" = "OSX" ]; then
-    brew tap caskroom/cask
-fi
+brew tap caskroom/cask
 
 # Java
-if [ "$OS" = "OSX" ]; then
-    install_checked "java" "which java" "brew cask install java"
-fi
+install_checked "java" "brew cask ls --versions java" "brew cask install java"
+
+# Docker
+install_checked "docker" "brew cask ls --versions docker" "brew cask install docker"
+
+# iTerm2
+install_checked "iterm2" "brew cask ls --versions iterm2" "brew cask install iterm2"
+
+# VSCode
+install_checked "visual-studio-code" "brew cask ls --versions visual-studio-code" "brew cask install visual-studio-code"
+
+# DBeaver
+install_checked "dbeaver" "brew cask ls --versions dbeaver-community" "brew cask install dbeaver-community"
+
+# Github
+install_checked "github" "brew cask ls --versions github" "brew cask install github"
+
+# The Unarchiver
+install_checked "the-unarchiver" "brew cask ls --versions the-unarchiver" "brew cask install the-unarchiver"
+
+# Chrome
+install_checked "google-chrome" "brew cask ls --versions google-chrome" "brew cask install google-chrome"
+
+# Vlc
+install_checked "vlc" "brew cask ls --versions vlc" "brew cask install vlc"
+
+# Transmission
+install_checked "transmission" "brew cask ls --versions transmission" "brew cask install transmission"
+
+# ccleaner
+install_checked "ccleaner" "brew cask ls --versions ccleaner" "brew cask install ccleaner"
+
+# ############################################################################ #
+# ### Brew Install
+# ############################################################################ #
+
+# Docker Compose
+install_checked "docker-compose" "brew ls --versions docker-compose" "brew install docker-compose"
 
 # Node
-if [ "$OS" = "OSX" ]; then
-    install_checked "node" "brew ls --versions node" "brew install node"
-else
-    install_checked "node" "which node" "sudo apt install -y nodejs-legacy npm"
-fi
+install_checked "node" "brew ls --versions node" "brew install node"
+
+# Yarn
+install_checked "yarn" "brew ls --versions yarn" "brew install yarn"
 
 # SVN
-if [ "$OS" = "OSX" ]; then
-    install_checked "svn" "brew ls --versions svn" "brew install subversion"
-else
-    install_checked "svn" "which svn" "sudo apt-get install -y subversion"
-fi
+install_checked "svn" "brew ls --versions svn" "brew install subversion"
 
 # ANT
 install_checked "ant" "brew ls --versions ant" "brew install ant"
 
 # Vim
-if [ "$OS" = "OSX" ]; then
-    install_checked "vim" "brew ls --versions vim" "brew install vim"
-    install_checked "macvim" "brew ls --versions macvim" "brew install macvim --with-override-system-vim"
-fi
+install_checked "vim" "brew ls --versions vim" "brew install vim"
 
 # Wifi Password
 install_checked "wifi-password" "brew ls --versions wifi-password" "brew install wifi-password"
@@ -59,12 +84,7 @@ install_checked "wifi-password" "brew ls --versions wifi-password" "brew install
 install_checked "7zip" "brew ls --versions p7zip" "brew install p7zip"
 
 # Findutils
-if [ "$OS" = "OSX" ]; then
-    install_checked "findutils" "brew ls --versions findutils" "brew install findutils"
-fi
-
-# Yarn
-install_checked "yarn" "brew ls --versions yarn" "brew install yarn"
+install_checked "findutils" "brew ls --versions findutils" "brew install findutils"
 
 # ############################################################################ #
 # ### Update

@@ -22,18 +22,6 @@ $ git clone https://github.com/emalherbi/dotfiles.git && cd dotfiles
 $ bash install
 ```
 
-## Config
-
-Configure "ANDROID_HOME" and "JAVA_HOME" if necessary.
-
-1. Edit file "system/.bash_profile".
-
-```bash
-export ANDROID_HOME=${HOME}/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home'
-```
-
 ## Aliases
 
 [Mac](https://github.com/emalherbi/dotfiles/blob/master/system/.bash_profile)

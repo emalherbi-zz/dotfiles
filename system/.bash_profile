@@ -2,7 +2,6 @@
 #
 # general
 alias ..='cd ..'
-# badblocks only linux
 alias c='clear'
 alias chr='sudo chmod -R 777'
 alias chw="sudo chown -R $user:"
@@ -76,8 +75,3 @@ alias npmgup='npm update -g .'
 # net
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 alias netlisteners='lsof -i -P | grep LISTEN'
-
-# export ANDROID_HOME=${HOME}/Library/Android/sdk
-# export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-# export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home'
-# export SVN_EDITOR=vi

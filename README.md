@@ -42,7 +42,7 @@ $ bash install
 
 [.inputrc](https://github.com/emalherbi/dotfiles/blob/master/system/.inputrc) ✔
 
-## Cask
+## Gems e etc
 
 ```
 => cask ✔
@@ -57,11 +57,7 @@ $ bash install
 |  => vlc ✔
 |  => transmission ✔
 |  => ccleaner ✔
-```
-
-## Gems e etc
-
-```
+|  => caffeine ✔
 => homebrew ✔
 |  => cask ✔
 |  => docker-compose ✔

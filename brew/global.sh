@@ -55,6 +55,9 @@ install_checked "transmission" "brew cask ls --versions transmission" "brew cask
 # ccleaner
 install_checked "ccleaner" "brew cask ls --versions ccleaner" "brew cask install ccleaner"
 
+# caffeine
+install_checked "caffeine" "brew cask ls --versions caffeine" "brew cask install caffeine"
+
 # ############################################################################ #
 # ### Brew Install
 # ############################################################################ #

@@ -19,6 +19,8 @@ install_checked "yo" "npm list -g yo" "sudo npm install -g yo"
 
 install_checked "ionic" "npm list -g ionic" "sudo npm install -g cordova ionic"
 
+install_checked "cordova-check-plugins" "npm list -g cordova-check-plugins" "sudo npm install -g cordova-check-plugins"
+
 install_checked "vtop" "npm list -g vtop" "sudo npm install -g vtop"
 
 install_checked "nativefier" "npm list -g nativefier" "sudo npm install -g nativefier"

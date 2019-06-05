@@ -1,15 +1,5 @@
 # My dotfiles for Mac
 
-## Manual Installation
-
-Some programs require that the installation be done manually. Please perform this process before continuing.
-
-- [Android Studio](https://developer.android.com/studio/install.html?hl=pt-br)
-- [xCode](https://developer.apple.com/xcode/)
-- [PHP Composer](https://getcomposer.org/download/)
-- [PHP CS Fixer](https://github.com/FriendsOfPHP/PHP-CS-Fixer)
-- [PHP Unit](https://phpunit.de/getting-started.html)
-
 ## Instalation
 
 ```bash

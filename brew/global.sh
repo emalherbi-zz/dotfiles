@@ -46,17 +46,26 @@ install_checked "the-unarchiver" "brew cask ls --versions the-unarchiver" "brew 
 # Chrome
 install_checked "google-chrome" "brew cask ls --versions google-chrome" "brew cask install google-chrome"
 
+# Teamviewer
+install_checked "teamviewer" "brew cask ls --versions teamviewer" "brew cask install teamviewer"
+
+# Anydesk
+install_checked "anydesk" "brew cask ls --versions anydesk" "brew cask install anydesk"
+
 # Vlc
 install_checked "vlc" "brew cask ls --versions vlc" "brew cask install vlc"
 
 # Transmission
 install_checked "transmission" "brew cask ls --versions transmission" "brew cask install transmission"
 
-# ccleaner
+# Ccleaner
 install_checked "ccleaner" "brew cask ls --versions ccleaner" "brew cask install ccleaner"
 
-# caffeine
+# Caffeine
 install_checked "caffeine" "brew cask ls --versions caffeine" "brew cask install caffeine"
+
+# 4k-youtube-to-mp3
+install_checked "4k-youtube-to-mp3" "brew cask ls --versions 4k-youtube-to-mp3" "brew cask install 4k-youtube-to-mp3"
 
 # ############################################################################ #
 # ### Brew Install

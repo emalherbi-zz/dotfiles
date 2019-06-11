@@ -52,3 +52,7 @@ alias svnignorecopy="sudo cp ~/svnignore.txt ."
 # net
 alias ips="ifconfig -a | grep -o 'inet6\? \(\([0-9]\+\.[0-9]\+\.[0-9]\+\.[0-9]\+\)\|[a-fA-F0-9:]\+\)' | sed -e 's/inet6* //'"
 alias netlisteners='lsof -i -P | grep LISTEN'
+
+# export ANDROID_SDK_ROOT=${HOME}/Android/Sdk
+# export PATH=$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools
+# export JAVA_HOME='/usr/lib/jvm/java-8-openjdk-amd64'

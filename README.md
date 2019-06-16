@@ -44,13 +44,9 @@ $ bash install
 |  => github ✔
 |  => the-unarchiver ✔
 |  => google-chrome ✔
-|  => teamviewer ✔
-|  => anydesk ✔
-|  => vlc ✔
 |  => transmission ✔
 |  => ccleaner ✔
 |  => caffeine ✔
-|  => 4k-youtube-to-mp3 ✔
 => homebrew ✔
 |  => cask ✔
 |  => docker-compose ✔

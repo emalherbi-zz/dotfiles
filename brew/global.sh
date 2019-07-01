@@ -68,6 +68,9 @@ install_checked "node" "brew ls --versions node" "brew install node"
 # Yarn
 install_checked "yarn" "brew ls --versions yarn" "brew install yarn"
 
+# Gradle
+install_checked "gradle" "brew ls --versions gradle" "brew install gradle"
+
 # SVN
 install_checked "svn" "brew ls --versions svn" "brew install subversion"
 

@@ -55,4 +55,4 @@ alias netlisteners='lsof -i -P | grep LISTEN'
 
 # export ANDROID_SDK_ROOT=${HOME}/Android/Sdk
 # export PATH=$PATH:$ANDROID_SDK_ROOT/tools:$ANDROID_SDK_ROOT/platform-tools
-# export JAVA_HOME='/usr/lib/jvm/java-8-openjdk-amd64'
+export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_211.jdk/Contents/Home'

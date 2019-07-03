@@ -46,6 +46,9 @@ install_checked "the-unarchiver" "brew cask ls --versions the-unarchiver" "brew 
 # Chrome
 install_checked "google-chrome" "brew cask ls --versions google-chrome" "brew cask install google-chrome"
 
+# Firefox
+install_checked "firefox" "brew cask ls --versions firefox" "brew cask install firefox"
+
 # Transmission
 install_checked "transmission" "brew cask ls --versions transmission" "brew cask install transmission"
 

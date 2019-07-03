@@ -44,6 +44,7 @@ $ bash install
 |  => github ✔
 |  => the-unarchiver ✔
 |  => google-chrome ✔
+|  => firefox ✔
 |  => transmission ✔
 |  => ccleaner ✔
 |  => caffeine ✔
@@ -52,6 +53,7 @@ $ bash install
 |  => docker-compose ✔
 |  => node ✔
 |  => yarn ✔
+|  => gradle ✔
 |  => svn ✔
 |  => ant ✔
 |  => vim ✔

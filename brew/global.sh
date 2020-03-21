@@ -12,7 +12,7 @@ print "Starting: Brew"
 if which brew &> /dev/null; then
     print_checked "homebrew"
 else
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 fi
 
 # ############################################################################ #
@@ -20,7 +20,7 @@ fi
 # ############################################################################ #
 
 # Cask
-brew tap caskroom/cask
+brew tap homebrew/cask
 
 # Java
 install_checked "java" "brew cask ls --versions java" "brew cask install java"
@@ -45,9 +45,6 @@ install_checked "the-unarchiver" "brew cask ls --versions the-unarchiver" "brew 
 
 # Chrome
 install_checked "google-chrome" "brew cask ls --versions google-chrome" "brew cask install google-chrome"
-
-# Firefox
-install_checked "firefox" "brew cask ls --versions firefox" "brew cask install firefox"
 
 # Transmission
 install_checked "transmission" "brew cask ls --versions transmission" "brew cask install transmission"

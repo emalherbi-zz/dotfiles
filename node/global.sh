@@ -31,4 +31,6 @@ install_checked "generator-locawebstyle" "npm list -g generator-locawebstyle" "s
 
 install_checked "speed-test" "npm list -g speed-test" "sudo npm install -g speed-test"
 
+install_checked "wifi-password" "npm list -g wifi-password" "sudo npm install -g wifi-password"
+
 print "Finished: Node"
